@@ -1,0 +1,19 @@
+<Project>
+  <!-- Evaluated before SDK paths: no ordinary obj/bin artifact can be reused/overwritten. -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'NecoArcDesktopPet' and '$(DesktopPetPmv2Pilot)' == 'true'">
+    <BaseIntermediateOutputPath>obj/pmv2-pilot/</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(MSBuildProjectDirectory)/obj/pmv2-pilot/</MSBuildProjectExtensionsPath>
+    <BaseOutputPath>bin/pmv2-pilot/</BaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'NecoArcDesktopPet' and '$(DesktopPetProduct)' == 'true'">
+    <BaseIntermediateOutputPath>obj/product/</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(MSBuildProjectDirectory)/obj/product/</MSBuildProjectExtensionsPath>
+    <BaseOutputPath>bin/product/</BaseOutputPath>
+  </PropertyGroup>
+  <!-- A release run never consumes the interactive Product bin/obj trees. -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'NecoArcDesktopPet' and '$(DesktopPetProduct)' == 'true' and '$(ProductReleaseRoot)' != ''">
+    <BaseIntermediateOutputPath>$(ProductReleaseRoot)/obj/</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(ProductReleaseRoot)/obj/</MSBuildProjectExtensionsPath>
+    <BaseOutputPath>$(ProductReleaseRoot)/build/</BaseOutputPath>
+  </PropertyGroup>
+</Project>

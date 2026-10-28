@@ -1,0 +1,194 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>NecoArcDesktopPet</AssemblyName>
+    <RootNamespace>NecoArcDesktopPet</RootNamespace>
+    <AssemblyTitle>Neco-Arc Desktop Pet</AssemblyTitle>
+    <Product>Neco-Arc Desktop Pet</Product>
+    <!-- WPF Page globs must also exclude historical builds when BaseOutputPath changes. -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);bin/**;obj/**;tests/**;docs/**;scripts/**;tools/**;.local/**;dist/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(DesktopPetPmv2Pilot)' == 'true'">
+    <AssemblyName>NecoArcDesktopPet.PMv2Pilot</AssemblyName>
+    <ApplicationManifest>Pilot/app.manifest</ApplicationManifest>
+    <StartupObject>NecoArcDesktopPet.Pilot.PilotEntry</StartupObject>
+    <DefineConstants>$(DefineConstants);PMV2_PILOT</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(DesktopPetProduct)' == 'true'">
+    <AssemblyName>NecoArcDesktopPet.Product</AssemblyName>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <!-- LICENSE names no publisher/rightsholder; do not turn the assembly name into a company. -->
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <ApplicationManifest>Product/app.manifest</ApplicationManifest>
+    <StartupObject>NecoArcDesktopPet.Product.ProductEntry</StartupObject>
+    <DefineConstants>$(DefineConstants);PMV2_PILOT;PMV2_PRODUCT</DefineConstants>
+  </PropertyGroup>
+
+  <Target Name="ValidateProductBuild" BeforeTargets="PrepareForBuild"
+          Condition="'$(DesktopPetProduct)' == 'true' and '$(DesktopPetPmv2Pilot)' == 'true'">
+    <Error Text="Select either DesktopPetProduct or DesktopPetPmv2Pilot, not both." />
+  </Target>
+
+  <ItemGroup>
+    <Compile Remove="tests/**" />
+    <Compile Remove="obj/**;bin/**" />
+    <Compile Remove="Product/**" Condition="'$(DesktopPetProduct)' != 'true'" />
+    <Compile Remove="MainWindow.Pmv2Physics.cs;MainWindow.Pmv2Voice.cs" Condition="'$(DesktopPetPmv2Pilot)' != 'true' and '$(DesktopPetProduct)' != 'true'" />
+    <Compile Remove="MainWindow.Pmv2Gravity.cs" Condition="'$(DesktopPetPmv2Pilot)' != 'true' and '$(DesktopPetProduct)' != 'true'" />
+    <Compile Remove="Pilot/**;MainWindow.Pmv2Pilot.cs;MainWindow.Pmv2CrossScreen.cs;MainWindow.Pmv2Boundary.cs;MainWindow.Pmv2Clicks.cs;MainWindow.Pmv2Motion.cs;MainWindow.Pmv2Rocket.cs;MainWindow.Pmv2Visual.cs;MainWindow.Pmv2Attachment.cs;MainWindow.Pmv2RestSleep.cs;MainWindow.Pmv2RandomIdle.cs;MainWindow.Pmv2AutonomousMovement.cs;MainWindow.Pmv2DragVisual.cs;MainWindow.Pmv2Size.cs;MainWindow.Pmv2StartupVoice.cs;MainWindow.Pmv2Seat.cs" Condition="'$(DesktopPetPmv2Pilot)' != 'true' and '$(DesktopPetProduct)' != 'true'" />
+    <!-- Exact G pure protocol; no probe window, geometry constants or CLI. -->
+    <Compile Include="tests/DpiHwndWindowsProbe/EarlyRecovery.cs" Link="Pilot/SharedEarlyRecovery.cs" Condition="'$(DesktopPetPmv2Pilot)' == 'true' or '$(DesktopPetProduct)' == 'true'" />
+    <Resource Include="assets\default_pet.png" Condition="Exists('assets\default_pet.png')" />
+    <Resource Include="NecoPetMaterials\idle\sway.gif" Condition="Exists('NecoPetMaterials\idle\sway.gif')" />
+    <Resource Include="NecoPetMaterials\idle\base_idle.gif" Condition="Exists('NecoPetMaterials\idle\base_idle.gif')" />
+    <Resource Include="NecoPetMaterials\idle\loitering.gif" Condition="Exists('NecoPetMaterials\idle\loitering.gif')" />
+    <Resource Include="NecoPetMaterials\idle\stand.gif" Condition="Exists('NecoPetMaterials\idle\stand.gif')" />
+    <Resource Include="NecoPetMaterials\idle\hang_on.gif" Condition="Exists('NecoPetMaterials\idle\hang_on.gif')" />
+    <Resource Include="NecoPetMaterials\idle\watch_phone.gif" Condition="Exists('NecoPetMaterials\idle\watch_phone.gif')" />
+    <Resource Include="NecoPetMaterials\idle\goblet.gif" Condition="Exists('NecoPetMaterials\idle\goblet.gif')" />
+    <Resource Include="NecoPetMaterials\idle\laugh.gif" Condition="Exists('NecoPetMaterials\idle\laugh.gif')" />
+    <Resource Include="NecoPetMaterials\rest\prone_prop_dangle.gif" Condition="Exists('NecoPetMaterials\rest\prone_prop_dangle.gif')" />
+    <Resource Include="NecoPetMaterials\rest\lie_down.gif" Condition="Exists('NecoPetMaterials\rest\lie_down.gif')" />
+    <Resource Include="NecoPetMaterials\sleep\slumber.gif" Condition="Exists('NecoPetMaterials\sleep\slumber.gif')" />
+    <Resource Include="NecoPetMaterials\sleep\stretch.gif" Condition="Exists('NecoPetMaterials\sleep\stretch.gif')" />
+    <Resource Include="NecoPetMaterials\sleep\startle_awake.gif" Condition="Exists('NecoPetMaterials\sleep\startle_awake.gif')" />
+    <Resource Include="NecoPetMaterials\sleep\grouchy.gif" Condition="Exists('NecoPetMaterials\sleep\grouchy.gif')" />
+    <Resource Include="NecoPetMaterials\drag\dragged.gif" Condition="Exists('NecoPetMaterials\drag\dragged.gif')" />
+    <!-- Phase 19C.4-B P0: gravity animation clips. Embedded only; no playback wiring yet. -->
+    <Resource Include="NecoPetMaterials\drag\scruff.gif" Condition="Exists('NecoPetMaterials\drag\scruff.gif')" />
+    <Resource Include="NecoPetMaterials\drag\throw_away.gif" Condition="Exists('NecoPetMaterials\drag\throw_away.gif')" />
+    <!-- Phase 19C.5-B P0: planar throw clip. Embedded and visually registered only; no playback wiring yet. -->
+    <Resource Include="NecoPetMaterials\drag\throw_fly_left.gif" Condition="Exists('NecoPetMaterials\drag\throw_fly_left.gif')" />
+    <Resource Include="NecoPetMaterials\click\flick.gif" Condition="Exists('NecoPetMaterials\click\flick.gif')" />
+    <Resource Include="NecoPetMaterials\click\pound.gif" Condition="Exists('NecoPetMaterials\click\pound.gif')" />
+    <Resource Include="NecoPetMaterials\click\quick_punch.gif" Condition="Exists('NecoPetMaterials\click\quick_punch.gif')" />
+    <Resource Include="NecoPetMaterials\click\rocket.gif" Condition="Exists('NecoPetMaterials\click\rocket.gif')" />
+    <Resource Include="NecoPetMaterials\click\rocket2.gif" Condition="Exists('NecoPetMaterials\click\rocket2.gif')" />
+    <Resource Include="NecoPetMaterials\click\rotation.gif" Condition="Exists('NecoPetMaterials\click\rotation.gif')" />
+    <Resource Include="NecoPetMaterials\angry\caper.gif" Condition="Exists('NecoPetMaterials\angry\caper.gif')" />
+    <Resource Include="NecoPetMaterials\angry\angry1.gif" Condition="Exists('NecoPetMaterials\angry\angry1.gif')" />
+    <Resource Include="NecoPetMaterials\fall\falling_down2.gif" Condition="Exists('NecoPetMaterials\fall\falling_down2.gif')" />
+    <Resource Include="NecoPetMaterials\fall\falling_down.gif" Condition="Exists('NecoPetMaterials\fall\falling_down.gif')" />
+    <Resource Include="NecoPetMaterials\fall\landing.gif" Condition="Exists('NecoPetMaterials\fall\landing.gif')" />
+    <Resource Include="NecoPetMaterials\special\fall_down.gif" Condition="Exists('NecoPetMaterials\special\fall_down.gif')" />
+    <Resource Include="NecoPetMaterials\move\lope.gif" Condition="Exists('NecoPetMaterials\move\lope.gif')" />
+    <Resource Include="NecoPetMaterials\move\trot_relaxed.gif" Condition="Exists('NecoPetMaterials\move\trot_relaxed.gif')" />
+    <Resource Include="NecoPetMaterials\move\run_excited.gif" Condition="Exists('NecoPetMaterials\move\run_excited.gif')" />
+    <Resource Include="NecoPetMaterials\move\sprint_panic.gif" Condition="Exists('NecoPetMaterials\move\sprint_panic.gif')" />
+  </ItemGroup>
+
+  <!-- Read the user's existing Action layout without copying or changing any GIF. -->
+  <ItemGroup>
+    <Resource Include="NecoPetMaterials\Action\idle\sway.gif" Link="NecoPetMaterials\idle\sway.gif" Condition="!Exists('NecoPetMaterials\idle\sway.gif') and Exists('NecoPetMaterials\Action\idle\sway.gif')" />
+    <Resource Include="NecoPetMaterials\Action\idle\base_idle.gif" Link="NecoPetMaterials\idle\base_idle.gif" Condition="!Exists('NecoPetMaterials\idle\base_idle.gif') and Exists('NecoPetMaterials\Action\idle\base_idle.gif')" />
+    <Resource Include="NecoPetMaterials\Action\idle\stand.gif" Link="NecoPetMaterials\idle\stand.gif" Condition="!Exists('NecoPetMaterials\idle\stand.gif') and Exists('NecoPetMaterials\Action\idle\stand.gif')" />
+    <Resource Include="NecoPetMaterials\Action\idle\hang_on.gif" Link="NecoPetMaterials\idle\hang_on.gif" Condition="!Exists('NecoPetMaterials\idle\hang_on.gif') and Exists('NecoPetMaterials\Action\idle\hang_on.gif')" />
+    <Resource Include="NecoPetMaterials\Action\idle\watch_phone.gif" Link="NecoPetMaterials\idle\watch_phone.gif" Condition="!Exists('NecoPetMaterials\idle\watch_phone.gif') and Exists('NecoPetMaterials\Action\idle\watch_phone.gif')" />
+    <Resource Include="NecoPetMaterials\Action\idle\goblet.gif" Link="NecoPetMaterials\idle\goblet.gif" Condition="!Exists('NecoPetMaterials\idle\goblet.gif') and Exists('NecoPetMaterials\Action\idle\goblet.gif')" />
+    <Resource Include="NecoPetMaterials\Action\idle\laugh.gif" Link="NecoPetMaterials\idle\laugh.gif" Condition="!Exists('NecoPetMaterials\idle\laugh.gif') and Exists('NecoPetMaterials\Action\idle\laugh.gif')" />
+    <Resource Include="NecoPetMaterials\Action\rest\prone_prop_dangle.gif" Link="NecoPetMaterials\rest\prone_prop_dangle.gif" Condition="!Exists('NecoPetMaterials\rest\prone_prop_dangle.gif') and Exists('NecoPetMaterials\Action\rest\prone_prop_dangle.gif')" />
+    <Resource Include="NecoPetMaterials\Action\rest\lie_down.gif" Link="NecoPetMaterials\rest\lie_down.gif" Condition="!Exists('NecoPetMaterials\rest\lie_down.gif') and Exists('NecoPetMaterials\Action\rest\lie_down.gif')" />
+    <Resource Include="NecoPetMaterials\Action\sleep\slumber.gif" Link="NecoPetMaterials\sleep\slumber.gif" Condition="!Exists('NecoPetMaterials\sleep\slumber.gif') and Exists('NecoPetMaterials\Action\sleep\slumber.gif')" />
+    <Resource Include="NecoPetMaterials\Action\sleep\stretch.gif" Link="NecoPetMaterials\sleep\stretch.gif" Condition="!Exists('NecoPetMaterials\sleep\stretch.gif') and Exists('NecoPetMaterials\Action\sleep\stretch.gif')" />
+    <Resource Include="NecoPetMaterials\Action\sleep\startle_awake.gif" Link="NecoPetMaterials\sleep\startle_awake.gif" Condition="!Exists('NecoPetMaterials\sleep\startle_awake.gif') and Exists('NecoPetMaterials\Action\sleep\startle_awake.gif')" />
+    <Resource Include="NecoPetMaterials\Action\sleep\grouchy.gif" Link="NecoPetMaterials\sleep\grouchy.gif" Condition="!Exists('NecoPetMaterials\sleep\grouchy.gif') and Exists('NecoPetMaterials\Action\sleep\grouchy.gif')" />
+    <Resource Include="NecoPetMaterials\Action\drag\dragged.gif" Link="NecoPetMaterials\drag\dragged.gif" Condition="!Exists('NecoPetMaterials\drag\dragged.gif') and Exists('NecoPetMaterials\Action\drag\dragged.gif')" />
+    <Resource Include="NecoPetMaterials\Action\click\flick.gif" Link="NecoPetMaterials\click\flick.gif" Condition="!Exists('NecoPetMaterials\click\flick.gif') and Exists('NecoPetMaterials\Action\click\flick.gif')" />
+    <Resource Include="NecoPetMaterials\Action\click\pound.gif" Link="NecoPetMaterials\click\pound.gif" Condition="!Exists('NecoPetMaterials\click\pound.gif') and Exists('NecoPetMaterials\Action\click\pound.gif')" />
+    <Resource Include="NecoPetMaterials\Action\click\quick_punch.gif" Link="NecoPetMaterials\click\quick_punch.gif" Condition="!Exists('NecoPetMaterials\click\quick_punch.gif') and Exists('NecoPetMaterials\Action\click\quick_punch.gif')" />
+    <Resource Include="NecoPetMaterials\Action\click\rocket.gif" Link="NecoPetMaterials\click\rocket.gif" Condition="!Exists('NecoPetMaterials\click\rocket.gif') and Exists('NecoPetMaterials\Action\click\rocket.gif')" />
+    <Resource Include="NecoPetMaterials\Action\click\rocket2.gif" Link="NecoPetMaterials\click\rocket2.gif" Condition="!Exists('NecoPetMaterials\click\rocket2.gif') and Exists('NecoPetMaterials\Action\click\rocket2.gif')" />
+    <Resource Include="NecoPetMaterials\Action\click\rotation.gif" Link="NecoPetMaterials\click\rotation.gif" Condition="!Exists('NecoPetMaterials\click\rotation.gif') and Exists('NecoPetMaterials\Action\click\rotation.gif')" />
+    <Resource Include="NecoPetMaterials\Action\angry\caper.gif" Link="NecoPetMaterials\angry\caper.gif" Condition="!Exists('NecoPetMaterials\angry\caper.gif') and Exists('NecoPetMaterials\Action\angry\caper.gif')" />
+    <Resource Include="NecoPetMaterials\Action\angry\angry1.gif" Link="NecoPetMaterials\angry\angry1.gif" Condition="!Exists('NecoPetMaterials\angry\angry1.gif') and Exists('NecoPetMaterials\Action\angry\angry1.gif')" />
+    <Resource Include="NecoPetMaterials\Action\fall\falling_down2.gif" Link="NecoPetMaterials\fall\falling_down2.gif" Condition="!Exists('NecoPetMaterials\fall\falling_down2.gif') and Exists('NecoPetMaterials\Action\fall\falling_down2.gif')" />
+    <Resource Include="NecoPetMaterials\Action\fall\falling_down.gif" Link="NecoPetMaterials\fall\falling_down.gif" Condition="!Exists('NecoPetMaterials\fall\falling_down.gif') and Exists('NecoPetMaterials\Action\fall\falling_down.gif')" />
+    <Resource Include="NecoPetMaterials\Action\fall\landing.gif" Link="NecoPetMaterials\fall\landing.gif" Condition="!Exists('NecoPetMaterials\fall\landing.gif') and Exists('NecoPetMaterials\Action\fall\landing.gif')" />
+    <Resource Include="NecoPetMaterials\Action\move\lope.gif" Link="NecoPetMaterials\move\lope.gif" Condition="!Exists('NecoPetMaterials\move\lope.gif') and Exists('NecoPetMaterials\Action\move\lope.gif')" />
+    <Resource Include="NecoPetMaterials\Action\move\trot_relaxed.gif" Link="NecoPetMaterials\move\trot_relaxed.gif" Condition="!Exists('NecoPetMaterials\move\trot_relaxed.gif') and Exists('NecoPetMaterials\Action\move\trot_relaxed.gif')" />
+    <Resource Include="NecoPetMaterials\Action\move\run_excited.gif" Link="NecoPetMaterials\move\run_excited.gif" Condition="!Exists('NecoPetMaterials\move\run_excited.gif') and Exists('NecoPetMaterials\Action\move\run_excited.gif')" />
+    <Resource Include="NecoPetMaterials\Action\move\sprint_panic.gif" Link="NecoPetMaterials\move\sprint_panic.gif" Condition="!Exists('NecoPetMaterials\move\sprint_panic.gif') and Exists('NecoPetMaterials\Action\move\sprint_panic.gif')" />
+  </ItemGroup>
+
+  <!-- Local development audio only. Installer/release resource integration is intentionally deferred. -->
+  <ItemGroup Condition="('$(DesktopPetPmv2Pilot)' == 'true' or '$(DesktopPetProduct)' == 'true') and '$(ProductReleaseRoot)' == ''">
+    <Content Include="Voice/rest/chr019_00_4200.wav" Condition="Exists('Voice/rest/chr019_00_4200.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/stretch/nec00_2301.wav" Condition="Exists('Voice/stretch/nec00_2301.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/stretch/nec00_2407.wav" Condition="Exists('Voice/stretch/nec00_2407.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/startle_awake/nec00_2204.wav" Condition="Exists('Voice/startle_awake/nec00_2204.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/grouchy/nec00_2200.wav" Condition="Exists('Voice/grouchy/nec00_2200.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/grouchy/nec00_2207.wav" Condition="Exists('Voice/grouchy/nec00_2207.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/stand/nec00_2301.wav" Condition="Exists('Voice/stand/nec00_2301.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/loitering/nec00_2003.wav" Condition="Exists('Voice/loitering/nec00_2003.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/loitering/nec00_2034.wav" Condition="Exists('Voice/loitering/nec00_2034.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/loitering/nec00_3056.wav" Condition="Exists('Voice/loitering/nec00_3056.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/fall_down/nec00_2600.wav" Condition="Exists('Voice/fall_down/nec00_2600.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/fall_down/nec00_2601.wav" Condition="Exists('Voice/fall_down/nec00_2601.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/fall_down/nec00_2604.wav" Condition="Exists('Voice/fall_down/nec00_2604.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/throw_fly_left/nec00_2206.wav" Condition="Exists('Voice/throw_fly_left/nec00_2206.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/throw_fly_left/nec00_2602.wav" Condition="Exists('Voice/throw_fly_left/nec00_2602.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/throw_fly_left/nec00_2603.wav" Condition="Exists('Voice/throw_fly_left/nec00_2603.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/nec00_2001.wav" Condition="Exists('Voice/nec00_2001.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/nec00_2125.wav" Condition="Exists('Voice/nec00_2125.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/nec00_2301.wav" Condition="Exists('Voice/nec00_2301.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/nec00_3056.wav" Condition="Exists('Voice/nec00_3056.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/flick/nec00_2104_a.wav" Condition="Exists('Voice/flick/nec00_2104_a.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/flick/nec00_2104_b.wav" Condition="Exists('Voice/flick/nec00_2104_b.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/flick/nec00_2124.wav" Condition="Exists('Voice/flick/nec00_2124.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/pound/nec00_2005.wav" Condition="Exists('Voice/pound/nec00_2005.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/quick_punch/nec00_2121.wav" Condition="Exists('Voice/quick_punch/nec00_2121.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/quick_punch/nec00_3071.wav" Condition="Exists('Voice/quick_punch/nec00_3071.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/quick_punch/nec00_3072.wav" Condition="Exists('Voice/quick_punch/nec00_3072.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rotation/nec00_3031.wav" Condition="Exists('Voice/rotation/nec00_3031.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rotation/nec00_3032.wav" Condition="Exists('Voice/rotation/nec00_3032.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/caper/nec00_2610.wav" Condition="Exists('Voice/caper/nec00_2610.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/caper/nec00_2611.wav" Condition="Exists('Voice/caper/nec00_2611.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/angry1/nec00_2021.wav" Condition="Exists('Voice/angry1/nec00_2021.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/angry1/nec00_2123.wav" Condition="Exists('Voice/angry1/nec00_2123.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/angry1/nec00_2200.wav" Condition="Exists('Voice/angry1/nec00_2200.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/angry1/nec00_2207.wav" Condition="Exists('Voice/angry1/nec00_2207.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/angry1/nec00_2706.wav" Condition="Exists('Voice/angry1/nec00_2706.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rocket/nec00_3111.wav" Condition="Exists('Voice/rocket/nec00_3111.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rocket/nec00_3112.wav" Condition="Exists('Voice/rocket/nec00_3112.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rocket/nec00_3115.wav" Condition="Exists('Voice/rocket/nec00_3115.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rocket/nec00_3116.wav" Condition="Exists('Voice/rocket/nec00_3116.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rocket/nec00_3120.wav" Condition="Exists('Voice/rocket/nec00_3120.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/rocket/nec00_3121.wav" Condition="Exists('Voice/rocket/nec00_3121.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/watch_phone/nec00_3057.wav" Condition="Exists('Voice/watch_phone/nec00_3057.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/watch_phone/nec00_3058.wav" Condition="Exists('Voice/watch_phone/nec00_3058.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/watch_phone/nec00_3060.wav" Condition="Exists('Voice/watch_phone/nec00_3060.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/watch_phone/nec00_3064.wav" Condition="Exists('Voice/watch_phone/nec00_3064.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/watch_phone/nec00_3065.wav" Condition="Exists('Voice/watch_phone/nec00_3065.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/watch_phone/nec00_3066.wav" Condition="Exists('Voice/watch_phone/nec00_3066.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/goblet/nec00_2036.wav" Condition="Exists('Voice/goblet/nec00_2036.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/goblet/nec00_3083.wav" Condition="Exists('Voice/goblet/nec00_3083.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/laugh/nec00_3031.wav" Condition="Exists('Voice/laugh/nec00_3031.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/falling_down/nec00_2109.wav" Condition="Exists('Voice/falling_down/nec00_2109.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/falling_down/nec00_2115.wav" Condition="Exists('Voice/falling_down/nec00_2115.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/landing/nec00_2031.wav" Condition="Exists('Voice/landing/nec00_2031.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/landing/nec00_2033.wav" Condition="Exists('Voice/landing/nec00_2033.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/lope/nec00_2002.wav" Condition="Exists('Voice/lope/nec00_2002.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/lope/nec00_2505.wav" Condition="Exists('Voice/lope/nec00_2505.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/lope/nec00_2506.wav" Condition="Exists('Voice/lope/nec00_2506.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/dragged/nec00_2301.wav" Condition="Exists('Voice/dragged/nec00_2301.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/scruff/nec00_2204.wav" Condition="Exists('Voice/scruff/nec00_2204.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/throw_away/nec00_2610.wav" Condition="Exists('Voice/throw_away/nec00_2610.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/throw_away/nec00_2611.wav" Condition="Exists('Voice/throw_away/nec00_2611.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/trot_relaxed/nec00_2001.wav" Condition="Exists('Voice/trot_relaxed/nec00_2001.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/trot_relaxed/nec00_2700.wav" Condition="Exists('Voice/trot_relaxed/nec00_2700.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/run_excited/nec00_2307.wav" Condition="Exists('Voice/run_excited/nec00_2307.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/sprint_panic/nec00_2004.wav" Condition="Exists('Voice/sprint_panic/nec00_2004.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <Content Include="Voice/sprint_panic/nec00_2110.wav" Condition="Exists('Voice/sprint_panic/nec00_2110.wav')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+  </ItemGroup>
+</Project>

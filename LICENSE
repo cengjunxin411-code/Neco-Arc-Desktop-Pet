@@ -1,0 +1,71 @@
+License scope and attribution
+=============================
+
+This project is derived from YoneDesktopPet, maintained upstream by
+DreamingBetter: https://github.com/DreamingBetter/YoneDesktopPet
+Audit reference: 3c410d002e4c6b8ed2cbcb7689dc2b531a48653c (not a proven original import).
+
+Section 1 preserves the complete upstream MIT license, including its original
+unnamed copyright notice. DreamingBetter is credited as upstream maintainer;
+no legal copyright-holder name has been inferred or inserted.
+Section 2 applies only to subsequent modifications that ZINC is entitled to
+license. It does not assert ZINC's ownership of the inherited upstream code.
+
+The public candidate no longer contains the original character geometry
+calibration tables identified in P4; P5 removed those measurements and annotations.
+Character-related names, action slots, resource keys and other branding/text
+boundaries remain. The code grants below do not license game media, artwork,
+audio, game text, characters, trademarks or future third-party assets/profiles.
+The upstream MIT/NOTICE and ZINC modification attribution remain applicable.
+See docs/ASSETS.md. GitHub publication still requires final maintainer review
+and explicit authorization; removing the tables does not clear every right.
+
+1. YoneDesktopPet — complete original license
+===========================================
+
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. Subsequent modifications ZINC is entitled to license
+=====================================================
+
+MIT License
+
+Copyright (c) 2026 ZINC (modifications)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

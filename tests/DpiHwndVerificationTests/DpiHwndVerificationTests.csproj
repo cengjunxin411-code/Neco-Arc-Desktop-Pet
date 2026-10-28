@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Coordinates/*.cs" Link="Coordinates/%(Filename)%(Extension)" />
+    <Compile Include="../DpiHwndWindowsProbe/ProbeGeometry.cs" Link="ProbeGeometry.cs" />
+    <Compile Include="../DpiHwndWindowsProbe/DpiChangePayload.cs" Link="DpiChangePayload.cs" />
+    <Compile Include="../DpiHwndWindowsProbe/EarlyRecovery.cs" Link="EarlyRecovery.cs" />
+  </ItemGroup>
+</Project>

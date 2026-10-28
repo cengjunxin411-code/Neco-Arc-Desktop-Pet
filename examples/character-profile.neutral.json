@@ -1,0 +1,1473 @@
+{
+  "schemaVersion": 1,
+  "id": "neutral-block-example",
+  "canonicalCanvas": {
+    "width": 80,
+    "height": 120
+  },
+  "logicalAspect": 0.75,
+  "animations": {
+    "NecoPetMaterials/idle/base_idle.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/sway.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/watch_phone.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/goblet.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/laugh.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/rest/prone_prop_dangle.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/rest/lie_down.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/sleep/slumber.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/sleep/stretch.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/sleep/startle_awake.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/sleep/grouchy.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/move/lope.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/move/trot_relaxed.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/move/run_excited.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/move/sprint_panic.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/drag/dragged.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/drag/scruff.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/drag/throw_away.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/drag/throw_fly_left.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/special/fall_down.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/click/flick.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/click/pound.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/click/quick_punch.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/click/rocket.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/click/rocket2.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/click/rotation.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/angry/caper.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/angry/angry1.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/fall/falling_down.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/fall/falling_down2.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/fall/landing.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/stand.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/loitering.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    },
+    "NecoPetMaterials/idle/hang_on.gif": {
+      "canvas": {
+        "width": 80,
+        "height": 120
+      },
+      "visual": {
+        "scale": 1,
+        "offsetXFactor": 0,
+        "offsetYFactor": 0
+      },
+      "contacts": {
+        "top": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "left": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "right": {
+          "x": 0.15,
+          "y": 0.5
+        }
+      },
+      "detectionBounds": {
+        "x": 8,
+        "y": 12,
+        "width": 64,
+        "height": 96
+      },
+      "sideOverlay": {
+        "wallInset": 3,
+        "bottomToContact": 24
+      },
+      "headAnchor": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "bodyAnchor": {
+        "x": 0.5,
+        "y": 0.65
+      }
+    }
+  }
+}

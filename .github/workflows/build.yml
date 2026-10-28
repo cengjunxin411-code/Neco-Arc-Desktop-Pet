@@ -1,0 +1,21 @@
+name: Source-only Windows
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-only:
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, reviewed 2026-10-27
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4, reviewed 2026-10-27
+        with:
+          dotnet-version: '10.0.401'
+      - name: Restore, build, run console tests, inspect resources
+        shell: pwsh
+        run: ./scripts/verify-source-only.ps1

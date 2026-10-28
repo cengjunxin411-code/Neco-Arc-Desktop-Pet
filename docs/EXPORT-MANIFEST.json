@@ -1,0 +1,3290 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "b809f0670a9eb0d90ee48ed77160a6c2274385b5",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "16e4f6bfeb074b6dcc1d32f209d3a104ce68086fc6619041d9a6ecd01bf6be1b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": false,
+      "sourceSha256": "b9f4d403bc21b5696f1e5b92116f597cf1dd0cb70445172150c68956f7971da6",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": ".gitignore",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": false,
+      "sourceSha256": "f448f99b347b67b904a98ed38cc002d003928609c953cb48990028bbebca12b2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "Animation/AngrySession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "6dd182431face81011fe8352a9dc1a2f07878e6147630abab0ff17c814f67659",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/AnimationVisualProfile.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "3eee955d29dea439ceb0e7b05fa9620f66ac6f8beb7b89ffae31d4017fd9220a",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/AnimationVisualProfiles.cs",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": true,
+      "sourceSha256": "c195b8261ed2040e971c5343afe08714b881057307478aed39878d7791eaadfc",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/AutonomousMovementSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fd12667bb4912b1265f0dcac05c78ffc8c218e42ac59e095fefbc9b511cac6ae",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/ClickDefinitions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "7607d7904776b83466fe2e632b474a0723131537811eb61d4c51385b688f96e5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/GifFramePlayer.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "87b4f7d8c84952fd4d6d4919e894592c0f05e686367a8e07c932642e4ff39339",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/GifPlaybackCompletedEventArgs.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8886b40ed5c9d15c3f9a0c9be7fe107e63ed0d782388ef12fc15992c472232e6",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/GifPlaybackCursor.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "377669ffe527ca891d67840cbf32751c6b3c2a4225f225734ddf5ac843a98f35",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/MovementDefinitions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "aea5ec67e14b7856f33ab6856021d767cd8a8606d832444d2ccbee7948bc1b99",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/MultiClickResolver.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "93519f7a66d19aa53c379418a1e93edb2179bfb5ca8cec31f21f1a7e6ba682d3",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/RandomIdleActions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "9cc38f72c69b27eb838a878a209e50ff750fe24ae1337813b15bdc16be541d89",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/RandomIdleScheduler.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "c7c84096d462fecdc417719dc016e4cb4b4cbc24b7b286e1e8ca4b1c7688ad51",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/RestAmbientActions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "a23c0a8a04c680e3537021019a83e492ef1aeb1035b99eadd4c263afef86ff6a",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/RestSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d5c599e38a8366a08e0c2c0abf73a780f596e49b503b1f228ade352b6c9d00f7",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/RocketSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "de3e7c7c1e241872ec25bfb6305aeaedd0d486cdf0ed555e696448e95d920b6b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/RotationSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "90a91450f9c9100b1cd54e5b64ac1e6447a727de1c5287fc3a96e13ddd4d8cff",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/SleepAmbientActions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "5b5457a64a8c688c735fdff87c91c4508a3ea97561102e58285a49fa51ad8796",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/SleepSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "292093ce27fee3d85fad6bbf616006e785934ec97c3c3e2faa55765450555bd2",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Animation/SleepWakeSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4231bf2a68473445f200a1ed7d5112bacba56742d300693851e4088fee1b4fb7",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "App.xaml",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "125e95389205899c086b4d482759ac2174e6e959ae122c21b18d95692fee1453",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "App.xaml.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "92c63ca41bcd114ad1e1c4cd77620a1e58842a7b67000e8779c4e05bc76997be",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "AssemblyInfo.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "138a4e83b2a1e4c941fcea420e0903b4ff25ce468c462d8a4d16bbb87aa4ee4b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "AttachmentContactProfile.cs",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": true,
+      "sourceSha256": "b267bff6271d359cf6c94f64208ec17d9d8b4cb3135a503aee78d822e1f16a84",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "AttachmentGeometry.cs",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": true,
+      "sourceSha256": "b7b189e3d479ee14fddcd6f7c758605baa641f067abb8bfb2e06d22a0a6682ce",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": false,
+      "sourceSha256": "e6bd7522dfd3326ef724dcf8309cfc75f679ba9fc837f2dea0e40a7475382e63",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "Coordinates/DesktopGeometry.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "b1d96666f0bbca84664b6bd1927bc8f3a73202552bb1db98e9452de42606765e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Coordinates/MonitorSnapshot.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4d010bf948ef9e667adaee386968850f25e7510c116ea82f72b4ccd0f6bc0253",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Coordinates/MonitorTopology.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fc68fc214e8052fba9ff9ec92a283d27b02fd200c9c7f4667b02d4a1ad7c6b8a",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Coordinates/MonitorTopologyService.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "2e31ad0bc6790bb1a8cafd8b6dec0b55605c9dc8acd44ee795fbbbac35ad66e2",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Coordinates/PhysicalCoordinates.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d5eccbc75a6c7f23031634a3bbabe9481fbb09579311339af78c95f9cc593160",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Coordinates/Windows/WindowsDisplayChangeSource.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fe08a645991b2639a94e9b7bdb881b426ed326dabd0b9da0c4956a99b0a89510",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Coordinates/Windows/WindowsMonitorProvider.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4bdfdef3098bdc3ea1064ca80e7eb8358b2645d5168c75a65d4c1301decd5f8e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Directory.Build.props",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": true,
+      "sourceSha256": "20d4671ac42ab7e3932c93925621a39d3370154a8a5b41b1c34845da62a5ab09",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "LICENSE",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": true,
+      "sourceSha256": "5ca2920d4f56954100c8f365461aba7b6c6154da49734f7b2703d9275ad49d11",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.AngryInteractions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "724a3c6ce6324ce8682ab87757e5ab250c4075780435553e01b6e3f8d4f61116",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.AutonomousMovement.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8ad938e49438a40bfb99d034afd0a77db64fdebc240dca34b8883a303a690fd6",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.ClickDiagnostics.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "343c06246b45bad397ac1cde163d6bec909b9fbb2f492e08dd5c004cbd69ceea",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.ClickInteractions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d8585d2a7601aad259ac04ae727de02d8b3a0258cbc7b37f1c99aede0c1c3d8b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Attachment.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "2cd476982b2f942991fb7c16f8bb826bc9fa5c6a56b7b3c849b9e1b7bc65fd23",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2AutonomousMovement.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "05c7166753760ac1f01f9d3fae7b789414acf4f8bfa6fb19c9eaf5454d4b1b23",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Boundary.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "5655bb96b583efe7979eb7dbaaadcafdf60863d00245f11bba6c8d514e40c5ca",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Clicks.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "b8c39bde5dbb29cc442755ed3b0c2f2fb94da96e39301b0772cd88e0879e98fe",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2CrossScreen.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "461aec2a9dd519b61f1915c52fd519737b34138b4d1fde748030357a0f2fd3b1",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2DragVisual.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "e95c11766ff89a683faa5ca161852f634b56bc5b37eae84f7495cb0a63c4db0a",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Gravity.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "a80a7eb0705dcacaad7122e8c9f7b4d80fbcde0197f48b9d9abbf3ef518ab827",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2GravityLanding.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "6e135dc1a0be1ce907c197b5bbc15b09858d966f90248a6d715a6f7505b399cc",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2GravityThrow.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "706ecfad521abfe7de9f678209e03e0319a3a781858a28a741c787d84762aa65",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Motion.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ba50153e4fd7969df84849c377b05d2dc0e4a450da056cd9609c64313825f05f",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Physics.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "c5d27b1e63e3248cf33b67514e4639bf81dc127fd8e1d43e3686ae25dfafe782",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Pilot.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fa980f461c8bb36cfe65cc0b7e5a4c02c3ee081873f0e522c800c0e34942aac3",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2PlanarThrow.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "39cd103c67bbcfeb898d76c8cdb8deaffa180340691c57bed3df535040a9675d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2RandomIdle.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8482ca5b3e62e4fe337e65c11b783037d04eb1889ab53c45ea021a5e5c77f442",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2RestSleep.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "5798f1cbbdbb7867a7e6805b9f0ecdf29b0eb51f806b2565c961971f50357e53",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Rocket.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4229c2b3f70d77d3379470d5976ef9b6e4dee199f1c166e04271b8b1cdaf47cc",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Seat.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "767c0788069cf52ce3361b124ec65851f62fedf439f2016253b937b49ba00e4d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Size.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "e451e213303dd9ffe9534dd8501b916d5de99dea12b6d31f0e1a6d0ef214c12e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2StartupVoice.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "2eab84b58c27dba3f53107e2260c6548443c11f1ca0bdef32098ecfa4696e7ee",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Visual.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "c514c38c3e1f5bae963e1fae8c207b13cca95cf3c37d48909370567710cc2a7f",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Pmv2Voice.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "3d751f7e90adeb816e2b6c3eea0c63922fadc41b019111ff8d0d0e26724dd3a5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Rest.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "95ae77aea2c7e7b606dbb53b12fb7a8ce728cd97771732cbbe41625e2b92af42",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Settings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "9bedae31764c329c43af21a382ce020bace05e012bc707b9a40fb12ed79a2a71",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Sleep.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "a90bfd4c15d9d68b66634022f9693f416ae2c1711ece783c2108b1dce8d50ec3",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.Workbench.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8c28135847771d963c1fa8b064086e63c0b0b062c86941cd3778ac5ab8a27f49",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.xaml",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "496715a47d9b1c3832280d81be191922a44aaffbb947e47749961431791a986e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "MainWindow.xaml.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "48111741e41465784026ed70ad548ccb6d280988740fd5531f69a3ebd52ac3a3",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "NecoArcDesktopPet.csproj",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": true,
+      "sourceSha256": "4d6d2ab19209ba8e9b768e056b97b24cc02523d5a3bcd79cda4ce21668d6b450",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/ActionVoiceCatalog.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "6c364c74c696931ac7d649323b3bbfae6a2db0f87ada480d92318eff6e985fcb",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/ActionVoiceService.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "67dbe1d0ef1c5a549be412cf8de9631d76efec3c748417918d842e0595964986",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/IVoiceAudioBackend.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "7f3fc9530f9e56a7bd1ae0eafd52c6ad4314fba85f26ff2ce7f6525196375b33",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/PilotFlickVoiceService.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "9b3d0531ae477f3da531750dfa5e8b70a9247c01f93779b9c20d1e0d319f7b2c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/PilotStartupVoice.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "b8d0cbe51ba69010f1057d9808b83e93d2a8f789151e7b103de90b238032271b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/PilotVoicePlayer.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "33461165b357a233f118220f6665440511192ef9a6d8e7a06e11a867113c2a8b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/VoicePlayResult.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4d1f42bbc1d9542cb06405fbc53287192db8fadd5dccac932364e22cafa712e5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/VoicePlaybackEventArgs.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "da22435ed5d2bb4f445bb0de4b5fd7da490b7a6c49aaae1f90af9956ad4971ad",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/VoicePlaybackState.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "50db14fcd01281346a94105d991c14435e1a676afd9c585bda0828ccf669fbb8",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Audio/WpfMediaPlayerAudioBackend.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "be81ee5a6ab35c2b5ce030297f01a883d591f0d189313b949d9f96d6c6988bb5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/CrossScreenGeometry.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d715b195e51d8a52b70e9beb97c3a0b95973007dc19b1588ff3fa0b044675e5d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/DragVisualPlacement.cs",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": true,
+      "sourceSha256": "6878fa05a2e0fccf2e4b5d89b566cbdcc43524c351356b8d1ee5729a5958d1ce",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/GlobalUsings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "b1db6b638ac83e78d7e2262477c1a7a601fd78a3883a0e8c46e45bf3c80674c0",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/IdleEdgeSeat.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "9976a270814d8211cbe6323af2f3cedc555de3b430845bacd776e5ac0fdf9b23",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/CursorDwellTracker.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "bd334faed82e34732c3311c64a266565f7f55bb7541259938fa7eab98f41ec55",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/GravitySession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "f743459924a686d2a4fe7f6f693133b5e335ce6013f7266a303d10440800d27e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PhysicsBounds.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "952a001ae57bf7fed58c10ab05fc3bcf07a98a78e15b307de4b3e65af4f888ab",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PhysicsMode.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "f1d5e085e63111ed086d259332d2b821958f6eeb9aaeb8f2c2e9024ff57867a0",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PhysicsOwnershipGate.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d36deda89da418f5066292975fdbbbcca7a6cc8aa57fd4bb5d1946ced538c0d8",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PhysicsStep.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "3ac0d45f6dee0a6a46f9972b150b48dcc093a8895b18dc63317ba3f32b41ddd2",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PhysicsTuning.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "97d3c593d29a0b6d81c96b502f27217563293eb8e8856f6e2a196620dd529c48",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PlacementReleaseClassifier.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "07084e958f94db6ab46807ff52858bed4ce8e2ec0f0806f2dd9e734b9f81deb8",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/PlanarInertiaSession.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fdc450f2e92c20c19f71eed7e8f49d169667475516ee9ba310ae1a1147f2ba9b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/Physics/ReleaseVelocityEstimator.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4d9da4afdf77af5d363637a11800bbd57e96c0457f6a3ad10aa3f0ea9974ad35",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotApplication.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "736e205e2aa61f88fd0e5bfa47edc4dd2bb4e91d6f3b6ec5a98375e13b5c3b12",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotAttachmentCadence.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4e874a4059ec9943f39d82dc9953393af22c70f1ed7fc9dc84d60c5f5d2a6d83",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotAttachmentGeometry.cs",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": true,
+      "sourceSha256": "aec2d1dfb0eb1718cecf53f9f281618a97da6397a0540a0822aef89c77cccc86",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotAttachmentTarget.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ad1a9ac4c1e12a68d62425faad53126ebc87c1267dc82f293aa192f6e0fa50da",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotClickOwner.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ff380f01bee8569624f92074acc6f7a78360feb8b6c7068165b1a08333f7b4c3",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotEntry.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "c5356e6321514bc2e493210e84e98f1b3c0002849a1e6a9fdef9ee4b28ef3003",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotLog.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "0aba276f9cdd121a5ff9b4a07d212f49298cb720db19ae846bf2cbb80df88304",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotMotion.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "eca9f3b8f6d2c9401261ff1f6afd04f6af868b746d21fc3c727063ccd258e836",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotNative.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "456cc3282ed66e9ce6d1e05e770ec70d3dad079eebcc65e88e1cbd8d9952ec94",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotOptions.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8934e99576c73467cda1620a4ed3110e338aa9f9cd39f0c403c319e10e8a0307",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PilotRocket.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "1b8c3e74a85a40c65a1a5fc552c58252edc147041c3f9ec455fc98dcb39dc8ba",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/PlacementPublication.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d75a41b953fc6827e4373975bfc53dce0b40bb82679482616e3de42659d31f36",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/SingleMonitorDrag.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8cc2d1330f484b6acc3ec1437cae6b8c9b43589594e9802e1af608b8df5bcc69",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Pilot/app.manifest",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "5267219a3adbaf88aaf7093a016532d31543ffae2a171cf8be9ebd8f5466f414",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Product/AutostartManager.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "74a3e0432ed7c36d5606b462069dbc7bd2a114bc8b44a2f52c50fa911c51897c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Product/ProductDiagnostics.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "e13f67f9a36b9c524f3bce23f4ea1815bfb3d3c9f3583034603940667781d638",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Product/ProductEntry.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "096c3bbf5126fa723fd29c3638cc47806cbedc5681c08cb1b0ec29d787571c8d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Product/ProductFailureNotice.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "26ebd20f0397d6ceb1be0d502d1d5fa3f03cdd4d01dda7cdd3f4c2e44cba2cbc",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Product/ProductSingleInstance.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "9b3ec06551319537b44eb759ac1b08fd711e16c48c92fbf03ce6438035c28ea5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Product/app.manifest",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "1afbaf55ec54e111d0c68e06823853cf2853baeb0f02b476be64fe94c187e4ba",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "README.md",
+      "auditCategory": "B",
+      "auditReason": "B1",
+      "imported": false,
+      "sourceSha256": "29c6617f8d643ec01cf847a40ae4622ed62da1901533bee31d6376cba70870e2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "Settings/AttachmentSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4f5d9c2076a06341548698b62e5f7c766d772dbc66f1b813edb88bbd2bedfc51",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/DiagnosticsSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ebae90b88d0fda49a3c076df2d457feb5bcf65933d20ba1673c569ff0cfb42ef",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/InteractionSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "3129c9ef37f7fdb48c6b63551ecc921ff0accad32de19a69f49e9a9fb9ca9a24",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/MovementSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "97338bc994361aa6b0c2576e2fed95a16417881e849c81162c62a38c66af046e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/NormalBehaviorSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "cb4a40129d134734896ca41d77be8901add6b7ae4b58d36602db28ddc8b84997",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/PetSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "89cfe15f8adf1817ac5659990207dd684cbf5d92d941c6331365c95752967b6c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/PetSettingsDefaults.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "721ad44fdcf4aab4f9d81b848408e990758348a26ca747ad65c556427c6564d2",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/PetSettingsDocument.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "850280ca321ddf4ded5153415c238abf4002275125a7d0a18b195ea3f2124a47",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/PetSettingsStore.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d7424d26a8f898eea334ab861cfad30f4f464792e75af418924353087672aca5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/PetSettingsValidator.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "100ea9b08c1c4503fe55d21ea46236460919f9521f753d4e45786e4326278dda",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/RestSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "1c4e1b874fefee2f44d5d1f660d5c48a2538e3776fcb0d891cc4310c95eccbd0",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/SettingsPersistenceDiagnostics.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "f2f3233d03a7d7c813590ea5a13486f1097328acd1747723f0522abb6d2108cb",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/SleepSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ab941c7bc09078445825e277b81c6d150beddef57da45e1e9226938861eae343",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "Settings/VoiceSettings.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "9ab4c5dded6f7fd4e706c5751bba8ef4664083780aced4cc1d08d6e92729f83d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "SideAttachmentDetectionProfile.cs",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": true,
+      "sourceSha256": "87c45012845ad0d5be7b81cef9587fcdfca387131bde0e20d0ae74e08c81b9ce",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "WorkbenchWindow.Fields.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "536ec10086041f518c755af067fed4aa2a4890ad0106b78d87fa347a0a205b7d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "WorkbenchWindow.Styles.xaml",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "0535ef1748fda1b6db09ec564406b30b90a6b6e3a8c96b75896aa04d9fed3c3c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "WorkbenchWindow.xaml",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fb06cdae040aa1d2210d31019e786835903a417b807fafdc02c5d4c408e1a7ab",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "WorkbenchWindow.xaml.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "1a2e4ea89cad61a3eae68f0e4799f2b503b90974f14c1983ac287018599df39e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "assets/Branding/NecoArcDesktopPet.ico",
+      "auditCategory": "C",
+      "auditReason": "C1",
+      "imported": false,
+      "sourceSha256": "c79d4f0fd71612a5fec45ca27d0e16577e9c11b1a657fad867d37822f7583ba0",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "assets/default_pet.png",
+      "auditCategory": "C",
+      "auditReason": "C1",
+      "imported": false,
+      "sourceSha256": "2abd9395a3cc22d4526d6bc085970c15eacc244a74aacb9f49b2b2e7c9e4f7ed",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "installer/NecoArcDesktopPet.iss",
+      "auditCategory": "B",
+      "auditReason": "B2",
+      "imported": false,
+      "sourceSha256": "eb82b491d47aac87c21e2b0180dda1dcfc9ea556f15b58fed8b48d92bd8e2174",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "installer/local-voices.lock.json",
+      "auditCategory": "B",
+      "auditReason": "B2",
+      "imported": false,
+      "sourceSha256": "a36eff2b3ecae52ee577e6bf3a7bfd026628936d34da32002565ea1b57a29708",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "installer/resources.lock.json",
+      "auditCategory": "B",
+      "auditReason": "B2",
+      "imported": false,
+      "sourceSha256": "dbf61d3bb2afcdb817f7f1dd0b34428c7009fb3e646fa25aeea40bb8c5860eb3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "scripts/ReleaseVerifier/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B2",
+      "imported": false,
+      "sourceSha256": "5884ce37073b011ed01c8e7e2a80fea74a649415b9b5a157051d1a8354dd96a0",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "scripts/ReleaseVerifier/ReleaseVerifier.csproj",
+      "auditCategory": "B",
+      "auditReason": "B2",
+      "imported": false,
+      "sourceSha256": "03344eaa71efced32bd78189c7168e603fd3cfd2a35d4824085bd5c8e014ec91",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "scripts/build-release.ps1",
+      "auditCategory": "B",
+      "auditReason": "B2",
+      "imported": false,
+      "sourceSha256": "c95b0e669120591debdfd552ec1e3894962f73a0467256ecb4e104481e2476ca",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/ActionVoiceIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "01a625224a15b9607c4fabfc2e945acee9cf1b8e6a022d62cf40c0926cb82a5b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/AttachmentGravityPlanarCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "48c1588e8d2f74e1f7403f1b980eb5739eb1f8a901baa5f614e89d052293acf7",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/DragThrowVoiceCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "05b17e9399654094934c331a27d3a7d27cee3794661b2d9d4f6b86d2da94d515",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/MotionVoiceCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "39dadd464e852e25ca80942e29ed747bd9f7745739655bca1fdc68d28c0db706",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/MovementVoiceCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "34aa09126cf1345ff07d25219ee78dd77bc6bfdd86d3390502683698c0393203",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/PriorityEdges.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "100c3bfee0eceb1bb693012f211a1c1ae6489e6d3eda38777e94154cc506f2a4",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "96bca8df51826110cbf9b1ad2ff346c170ad9b0fb324631ac87f7c691bb47718",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/RestSleepVoiceCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "29e6456609a55d97392a714142596dbb3381dd1da5a44388544cf5bfea6057f7",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ActionVoiceIntegration/VoiceSettingsCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "4749152e384f22fc1f707622086cf43961099b7646770099f513c8d9c904750d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AngryIntegration/AngryIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AngryIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "82fedc1405e4726fef43a927a4835af4df510c82211d36f14d94ff9f37efea1f",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AttachmentHandoffIntegration/AttachmentHandoffIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "98a523f0ff03d9973556c2c3c3b75bc490d70591092285931933f5fb7cfceaa0",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AttachmentHandoffIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "6e7e5b63077b915a99ab878fb8f74a7db8be26a38e30d1e42dfaa2057e62663f",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AttachmentIntegration/AttachmentIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8d0b00074f819c0889e6b910ebbb56de8d5062a6b24f3aed1b65a002d3dfc9a2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AttachmentIntegration/DistanceLimitCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3161362fc2b906c9fe1e526cb5ed8b2467a1d5043ff769d56e691d0894ed2cb8",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AttachmentIntegration/HeadBaseline.g.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0f8af3b0cf0a88a03182369feb1aaf9f4c538f8a967b9459ef938766295fe06d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AttachmentIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "86052397dd542af4310a68dfd06770d6bfb5ce2361acc06534814f74ab6958a3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutonomousMovementIntegration/AdvancedChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "ea2f9fcb83452510f3e6f4c8e7bb0ac4b7fc9923f5fa064562dbbded910e8e39",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutonomousMovementIntegration/AutonomousMovementIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutonomousMovementIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8125549ea39865f0963b49a2f8db47f185f1113ef0f9296a8c9931014ea0dce3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutostartIntegration/AutostartIntegration.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "9a9769288ad7faa3d23d6228664f939a5ab9316afb4c9265fd00ea5d98ca2161",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutostartIntegration/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "4d8ac3a33cb19c83e4e4cd4d0dd6a581af0351655a1ec1e36dd77dbdd95a08ec",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutostartWorkbench/AutostartWorkbench.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "09b0bdef5609165616bfec938a6ce760868a20ce053d630a34a5c03b679c5e50",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/AutostartWorkbench/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "df01f9746f969eb78c48944d658e5896a05628b5092eb40a87792cccfaef03d9",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/BaseIdleIntegration/BaseIdleIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/BaseIdleIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "94802e553d2b89d799ca0a285af7fa976afaece3e4add716809ab737dc4046aa",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ClickReactionTests/ClickReactionTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "0f6902d9268bb6b00ad04c5bd0c3655ed5782bb337c734c668ed2fd09537f0d6",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/ClickReactionTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "a7c2ad3124374a49e6106059720aab085ce23b7fa528e814c8c7c40a2127b4d4",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/CoordinateGeometryTests/CoordinateGeometryTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "2f6d6ecfed65011f8ab2e665bef626203c8ad8392554332bd6308d2c53c86d7c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/CoordinateGeometryTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "0c3b546376742796180297bb1cb1de37257c8e0a8d47f99fa0de0c1fe8a9f332",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndVerificationTests/AdmissionTests.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "c6cef6ba38a1e4276788b74be896b0fde6b9bcff87d81993d7bda7c925e2926c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndVerificationTests/DpiHwndVerificationTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "24d96149453ce4057ad91cff753dacf29c0f900e1f68590e7c17c4be1bf9cc68",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndVerificationTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "46c738f9186074ba61a3a80be159a5e79cdb8ba1e8d73fc4985b364b0966621a",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndVerificationTests/RecoveryTests.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "fcdc425fcb77536a9ec16c081d01d8492170529ca0946c08aebb48f425915313",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/Compare-TrialLogs.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "c46bf232f9c58994f1d47341248ac2bc9749d42aed35142d071d71d59edc0267",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/DpiChangePayload.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": true,
+      "sourceSha256": "659f2375842c64ad5c3deb2b9ccb96c879072bf0de642c7cae71d3c7bff829b9",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/DpiHwndWindowsProbe.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "878750719e64853f4e5a0d30c518b4d3006ee9a0a820896571d230c41cdb046d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/EarlyRecovery.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": true,
+      "sourceSha256": "c01c2e86f52e1d38bf16dc92d2ff91d65d93d6fa7e1ae95b898b359a2bc335b5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/Evidence.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8904179f7e0ae71c9cbcc5b2958a510ed8d6cf49dc24b200fbfbfdd55c549a90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/Native.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "5378673ffac01e1942dbfa05c7cdb561e74b1736722d9d05c433068e52ae815c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/ProbeGeometry.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": true,
+      "sourceSha256": "70dc9e092a889a6b0320d1930044bafa189a327b76db6d197a5202772a598b73",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/ProbeWindow.Recovery.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cfec21631d4ca95bfdc72dffd3ac442ad21b1374254b61ba0377951d53e75cc3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/ProbeWindow.Visual.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "5e1831feee96734007c69ffbe6a9ea4f797bcc55f469cbf1f8e50ea93fb8f215",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/ProbeWindow.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "550ea373f4092206661ef5a5796241f1651893f5c187cac9c4e7584913e4be79",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d1fcc5125545af7ef9250948f693fde324cff88cf3099d6872e64dcf13a3eebf",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/README.md",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "c91a01bc57de03eff5c0807b6d289e12cbd9a8f4b455ffccf0646f0fea097fe6",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/RecoveryExperiments.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "97ec96f4b1fb5f4e4f88f9b942369f59f59b1432d1832d8558dc264bdd2f90c8",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/VisualExperiments.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7d0726eed9681e2cabdd411714749a86427b76b5bd9d7b53fae3819e6c520608",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DpiHwndWindowsProbe/app.manifest",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "581320f31baad7e7ead88bda46115e84f75532db6aff7c9f5c9cd8b81bd8e60c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DragEntryPlaybackIntegration/DragEntryPlaybackIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "1f3a0b820a3091fe7f79fc6c7a92847353079da24f705cc2b3bde7ee1afc2fcf",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/DragEntryPlaybackIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "20ab948a8c77fbd18dcbf4b183f6a80c3c4ba7273ec504eb42f54e452aac7848",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/FallingLandingIntegration/FallingLandingIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "6991bb3f7ea9cc378a9d2d99a6a318b095b205cbf12ae69c0d9e7076f9a2d895",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/FallingLandingIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "99530a088195947b68a54e682b73abb4a9b110e85659df41720cc7acd5308c57",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/FlickVoiceIntegration/FlickVoiceIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7512a9b91b13aa5cd480a79511deb6a39a0f1e06de1bfcc0767ec02718632a85",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/FlickVoiceIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cd15209a10a2c283efd103e83a39989621abdaebcd2670de6adbd6e7ba4cc2ff",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GifFramePlayerIntegration/GifFramePlayerIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "fa96ce1e0fa65a75a9a9dfa190b8869a453db0e3933df6cf0e414249359cda64",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GifFramePlayerIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2e4c226789c79d2a327f3c2c7b63e37787e588d5b6e69d60cec7c0d52aab7a89",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GifTailLoopIntegration/GifTailLoopIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0a5ae2c91aae6d7e6cc89f969374a41aaec8f0ae09f1effa2c1c9a5779d59c7a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GifTailLoopIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3e612efe7c127f55c28103cd1b6d432535ca85722053901aa64cf82601348bef",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityLandingIntegration/GravityLandingIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "61e9310f2dca4a688f03bd13d764ecf350da1247c615dbd4f1b31a74cc8cb911",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityLandingIntegration/InteractionCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d1379c67da40ec0be419ea00ad2341dea8a86b5f3feeb7e670ddd18a2da10887",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityLandingIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "adc883e09f0600ac17faebef76ef4ea7029d3563082e1d04d600f50cfe8bad0c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityLandingIntegration/RuntimeLandingSwitch.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "108b49ad78a198105a2ad6dc2a09d830fc686037ac254a463e4e98abbd2e349a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityScruffDragIntegration/GravityScruffDragIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "4b5bb8cb27155ca8ec5eb54f5b8f987219c33d1bb3f5f6c0917a7f6b22d0d50f",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityScruffDragIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "f9ccd6db4244cb0f91634a46ef351f1d433cf62b06900635ddf78c41280f0a59",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityTests/BallisticCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "15df11294634fdb126e781e8d58bfdc7fba6465a740971139a51063872611a56",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/GravityTests/FeelCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "011ae81f7a00adc680a5d7c6a2194dd22b296d03e9871a3e4c195d5041ef114c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/GravityTests/GravityTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "bba298628a260081dc80910aa450fab6037d1eb3c79569feab714a762c2867f1",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/GravityTests/LandingCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "72919f52f2c56c12dc86947f7616e2dc9571c2affe89bbca8fb7ae8a51b7ae2f",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/GravityTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "7617573c058198722e511e0bc8ecbba1ac28d1570a634780b9224f0d57d3b57f",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/GravityTests/TrajectoryReport.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "8703d06e160a16ddfc342498997629439fd21008f400f464a6ac6f618603ef0f",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/GravityThrowAnimationIntegration/Fixture.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "de9b4e13d9d6a130d2b5dd33458d27c917dab09b131a2ad2fb3ea1fb06888c77",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityThrowAnimationIntegration/GravityThrowAnimationIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3e2e80e1df32b2e6c0da72e997824cdbf7b02dc6e5a68a1d77e022975ab89236",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityThrowAnimationIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7a16fd36bbcdbda829b59557c431bcb7722cd5a7bd05aef0b8975b1f7f9e27c8",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityThrowAnimationIntegration/ReleaseDiagnosticsCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "047b93f5109a0d3a34795fcdc566a72bbc10741d6aa76ab17cd1e39311406b58",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityThrowAnimationIntegration/Run-Phase29B1.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "e4f90115c6570749407c09b13077b5fc6f34345f4f385bf17423d6442b166b8c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/GravityThrowAnimationIntegration/audit_phase29b1.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2b899de2176b9ed61883bf5f5587f7cbe4718229d7fdb2de6fa32664fd97da76",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/LocalVoiceContract/LocalVoiceContract.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0ac4309d5e50785a94b2bbafa1639b12d8da1b073689fa38dd8220efa6e498d5",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/LocalVoiceContract/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2bdff6b1a747267207ef9a2dd0531c38622da9368b1bb52a949271c0f4cc9081",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MonitorTopologyTests/MonitorTopologyTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "5fd6c8d159c92c57e4ac5051ce3539241cd146e2e1e45bddcd342ab8acffd819",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/MonitorTopologyTests/NativeCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "3698ae9480856e7b5ba6e522e1b32c0462aaabdf35d251ca400d1ec7bc513c78",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/MonitorTopologyTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ff889171ee2eae3bf3c9be3378db5f7c85e190ccaae6335c931db1494961bce9",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/MonitorTopologyWindowsProbe/MonitorTopologyWindowsProbe.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "046421ea5434e634609981bf9c74793667d856b11240f21a073f607f3b02fd65",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MonitorTopologyWindowsProbe/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "b9270a830d20dd3c20ecad638b52305e332d3a64137061d213db90d7c53c3826",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MultiClickIntegration/DiagnosticsChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "91fe83e2f1110aec6daac5c66159291ba3ab1aed64dbb9988a350c077b93d72b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MultiClickIntegration/MultiClickIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MultiClickIntegration/NaturalChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d8e84ae25e9dc9bb6b9d2cd8b63d88ea4e6da3aa8bb31af307ee6ab8d4546ed2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MultiClickIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "c955177f9eca0739a90fd43ab3dc92ce9d3f37e2956197f011c4b88661b02e5d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/MultiClickIntegration/WindowChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "f2bea56bb59a9239a5c33cfbf943df11b314aa0f7e69f41d809ec111f5848ebe",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsGatingTests/GateCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "4473221df5e871bf79cd0e6e7a924d479e0cfcd6f6dc7b8b836a9b7febd39c6b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsGatingTests/PhysicsGatingTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "1d6302b186dc4cc85cea26b6cf8c3b9aa4b5aecc4ca189a04537095250b6b535",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsGatingTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "cfeeade5d829e7b7d00a7629084ebb92fe0bf881b6e4aa7b62d67d450034c8c5",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsModelTests/GeometryCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "1cde4f44954cf40df5aca10f7dd7f11c812bb17f3cb05e794776a6476de128b6",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsModelTests/MotionCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "3ecec0bdfef81b85a8939c6991bb31b08e12734af9da1378b687b6ff152b2eff",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsModelTests/PhysicsModelTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "e34666f71b7e5aeed03174e3d1c5198895e44f269463ea473d2027d97f076ad2",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsModelTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "e1b5569a59b45360738e457bf80f8259e2a57b5ff1c5efec118f92acf7ff9b2d",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsModelTests/ReleaseCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "a9eef7594b2c601daf8034f7b20f7d55ae0c39625b88a437a7510cdb20bf9d5c",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsModelTests/TailCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "f1281c9695cf4d854c24c3abd9fbe42c3bb1340bde51a1837ddf6957ab6aab51",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/BallisticTimingCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "a7ed9cbeee89915ab9d537c42e990f68b70792260fea73cb7d63840fc61d1099",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/D0Cases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "c26e232549a84e600b4de09a4a3b5f0321a83bc148fa4c3bddefb724a700366c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/D1Cases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cb51067892491b7d14867a57e997bd10505ca71630295cc61a03b16c509298e3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/GravityBallisticCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "98c478c45dd1d2c74b50654116b3755ae584d1185995c6979c82dc7f3d92f521",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/GravityCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3a9ce3dd28c28a41f54ab6f6b44fba1331f25810c3b8108e0e3c5855541e42d9",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/GravityDailyCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d22bf9780a0d73333f4ea081dd50444479e2f886b9ba9617d8043b4d078c9991",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/GravityFloorCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "f2d3e71ac31889fd4ebff2b74ddcc40b75b2685ff002e023671eb46ba83a27ee",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/GravityTimingCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "b2963c97dd94f73406fcfa387ef2ed47933d502ea237ab1989fe59010bbc2c2a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/InteractionPriorityCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "91652dfcaad94be868c22c49b720a6a169ac416cd41683f814dded0117a47fa1",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/PhysicsMovementIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "608301ca05f3a6b199ee219f2a04951814cae671fd200d1fae2cc98df49e645b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/PlanarReflectionCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0688aaa9dda9f87172d4dc39d3183babaf9d40445506e0c23a12a1711697541c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "b2c8b8c3411318a62cfee7cdceab39c50b6c247d731df12976a46800cc5f5b07",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/R1Cases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "dfe942619f34fa6a83f08b3d577f37ce583da3586bca9750c9b76541998bb5db",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/R2Cases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "aa78dcc205f2f64721a85e6d088c264c3cc3dc32e12a2a9c54430d872d3e84f4",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/Run-BallisticTiming.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "1f032c20f911deae6cd4b07d44e2134be626cce19ca47bca30fc777b5e16ad50",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/Run-Phase27EX2Regressions.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "824150d8d86cbd1530cfc1457af64ca8db43263bdb2367561b36d43f4a760062",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/RuntimeModeCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "01539da1cdacd37948bb69f8a0a170b464a0a02f093971394e386a08cc64b190",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/Verify-Phase27EX2Protection.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cf2d887d30fa0bcdaa287f5ae232aef4d1699838eef8e665ffcaa481ba65d105",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/audit_ballistic.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "1bb4401d0093c4528143b4bfc0edf54ca9705903c221dbc853cee286f528b099",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PhysicsMovementIntegration/summarize_ballistic_timing.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2b694228ff191c91661bcc28b30b7d9b4706be37d1021d3da90541949f60fa09",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PilotVoiceIntegration/PilotVoiceIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "4acfccf589dddef0b5f0a0b46c75e5c58e38d68804a6a3ab1229820a9bcc9fae",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PilotVoiceIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2e0aadceb7409dc4b1053924a493a9622274bb547e84337ff5076f0375a60d5c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PlanarInertiaTests/PlanarInertiaTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "ba33fd0e7ace959ef7a91f583018f0819124dbc070e8b034059c40980b2bc2da",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PlanarInertiaTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "e3ea118a88e24b98d80cfe948d2bac90452e7a8d7d31f5ea9500f8797d07347b",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PlanarInertiaTests/ReflectionCases.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": true,
+      "sourceSha256": "d9428cc30189fabebb8b38ae1daa2d2a44c464b33cad5e59c1266bbc3a28844e",
+      "reason": "runtime/config or explicitly selected asset-free suite/shared model"
+    },
+    {
+      "path": "tests/PlanarThrowAnimationIntegration/PlanarThrowAnimationIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "4113eaac17b74f1655bc2f4be79d19ea5145dcbc6bf552fa84e0368b4cb99b57",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/PlanarThrowAnimationIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "82da8cd82360f73a9aba7fdd70a37df37baa1d4c43f21caedfc0fd00884f96e5",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/Pmv2WorkbenchIntegration/AttachmentWorkbenchCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "035cd14c4b7ccbb445012d61a689a7a03bf49b515070df6db210948f9cede744",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/Pmv2WorkbenchIntegration/PhysicsModeCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3f993d3934aefb387c57b692c119f34336a75a74dd39915a1d3c5503b0e55c26",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/Pmv2WorkbenchIntegration/Pmv2WorkbenchIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8828ea46f84dcc540031d5f2292a209fdbe44f180236a027f8edfc3f5935f6fa",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/Pmv2WorkbenchIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "f4870b05ccd8c5a5fb0016f9d172154879371c156352b9644e2602020d50b7bb",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProbePmv2BuildIdentity.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7617122e805dddde270973b967d5e1608cbc0f9293f06f2a285bce0c9da86e43",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductEntryIntegration/ProductEntryIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "64222b5139ea4c332f7ecd495c63eb2abe9913b126e42ad8796d6c690c4fc3f5",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductEntryIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "5f0b9e9d2ce6e432c038e9d4c71abf99235c3ca43bec8d6a52f76448f3956ab2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductSingleInstanceIntegration/ProductSingleInstanceIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7ec6ee9a72578604a220bfcdea5998e123b4fe8a2bf7f6b613b4a1cd68f79d6f",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductSingleInstanceIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "374582c5d1baabbade3a1570e48c0a4bd6be23de132c03faf9e936e11c6a773c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductStartupReliability/ProductStartupReliability.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "20eeee50e9c7c5e2802255f28cb8051a9dfd3004d1f66cbcceae4e377ab42465",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductStartupReliability/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7836933687ce2257aa7b00634bd8b6e0ff0d17076dbad89b76320593e15d8811",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/DetachVisualCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "5484ce63fd1e7241c0d147f483d457182cd9db543091d9c1ed5b4cd69ca22bae",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/ProductionAttachmentIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "bf6af3c9107c890884cd8ec0a2ea69fb7e28b9250aa89ff14c8b110942873427",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "363ae9be6c40a9b63e02911d8516dbb6c2da50b5a219913bbde5cdf93e570c88",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/ReadSideOverlayAssets.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d61d6011158a7c15c0887ab6fc44f3ab091c160c8a591e00fcf0b2b32b6cb0f7",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/RuntimeControl.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "ca90f739b8d017564154758e13f125372a02d331507072a9804c87fbbf0020ed",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/SideContextMenuCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "93acf20767d57939dba0f27da88d11c22e374d96b517ff636ba6f743c3090d5e",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/SideOverlayAssets.json",
+      "auditCategory": "B",
+      "auditReason": "B3",
+      "imported": false,
+      "sourceSha256": "94a4799b752e9453b9ffde7aa1a9c8c83b73dd2930587bd44d2d5605982939cb",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAttachmentIntegration/SideOverlayCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "5c4895f68164728eb06c7b749817a9dc3f6932134da08cb5551d676fb79b3bfd",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAutonomousMovementIntegration/MovementWait.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8eb4a2357ae7f594abe52e1feebb644962c809c8aed3317aeb25eba2f9519f30",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAutonomousMovementIntegration/ProductionAutonomousMovementIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "05d547c8cc48f6075b5f1884bf90ae37773f52131c31e7d27d89a3d910f51721",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAutonomousMovementIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d417e43ad3bc4d4b317ae52d5df6fd735958fb2a85d28577524d10448a1a93c7",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAutonomousMovementIntegration/Run-Phase29B2.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "4b1dc6155eb268a2113f3ac9cf5df2b633ebdd2ccf3e9f14fbd29d183acf0ce5",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionAutonomousMovementIntegration/audit_phase29b2.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "c9d3123b38cb7634ad8e81e41e28661cce1c619c601607f454fb6c45f6c14013",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionClickIntegration/ProductionClickIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "5b98416e1be483d7613a9c5423d6170aae6fa079cc5724d9fdb3e5cf8d077204",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionClickIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "15ec298d4ce5b4329565446ce2fcf61d2018ede0f14ea246863cdf1ea3287408",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenIntegration/LateWatchSettle.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7f63590ef88375f20b7434b9a9505df7f70ab7430cac6a11478d3d904a59610c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenIntegration/ProductionCrossScreenIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "608301ca05f3a6b199ee219f2a04951814cae671fd200d1fae2cc98df49e645b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "fd9756a623d191b28f80836285fe9b930c4623c1a19d527b79df230ce84a10fb",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenIntegration/SeamAB.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "86a9cf803135ca539f28bd36c85ebf8e4f6e89f3e9951544a058ae709920e6f2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenIntegration/SeamTests.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "01e37d75fbf3b0e61e892e0f4fb19e03c61f3955a106076b6776bc4278b339ee",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenModelTests/DragVisualPlacementTests.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "094c091f13c29b2770634dd64334272d30c548658512a6e9a60ddb642f4970ef",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenModelTests/IdleEdgeSeatTests.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "410deb4a96ef791c57340377f52f5fe9de879d3d5cc6431534e7ea67c0e21a7c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenModelTests/OversizedTests.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "fdad9d7f3137d9096e05d90ab23544ddf29239af781af555e8d2c11fe96315de",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenModelTests/ProductionCrossScreenModelTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "cea265df3ca185e6b64bc1c2f057f58b3418b02f8ca4bb2404af042a2a541434",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenModelTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "8fb8f8a9a8af18f029be6b4cdb6961ea02c82ae12765f5ee1438f28c01114056",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionCrossScreenModelTests/SeamTests.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "6b94cbf27df777560185b7106c8b3a92bb3309ac416e662763921237b1e3aea3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionDragVisualIntegration/ProductionDragVisualIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2c5e701d049a3d3739c7b2595269ed4d62dbc6d217562dcbf41a1e4d8895a44d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionDragVisualIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "e0f1c9ec8a595ff469dba0ac5e2ca23ad886cb481b9176546393a6da9e3130d7",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionMotionIntegration/ProductionMotionIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "608301ca05f3a6b199ee219f2a04951814cae671fd200d1fae2cc98df49e645b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionMotionIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "62e4c191a9a37d4502a8b6f1e73752efb5efedd483e15352b81229ed1fda85a4",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionMotionModelTests/ProductionMotionModelTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "7b2d5449a3fe77ea24247fbc74cb539576f4d27ae00319db314da42299e6c037",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionMotionModelTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "805daabd7417f7b7413892863fa68f766217c01d1e79dfe1ebee5ce89bbe5569",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPhysicsGatingIntegration/ProductionPhysicsGatingIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "01a8e2718fb77ef1f9cb9fc14defd9061c0b3d8122603511be6b891b2c2dddd6",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPhysicsGatingIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3e204f6f6b090849bbfe1e7ff97cb1b3ebae6c44cb0ed6aa3009622c10fee395",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPhysicsGatingIntegration/RuntimeSwitch.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2e114c696e77c507a1a92adb1d9988bf9add22835e7c9ed3348b6f1f6a572bae",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPmv2Integration/ProductionPmv2Integration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "e84d1a93237751818cc126c8719e53820f8ce31891e02082b5e04b75321da7bf",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPmv2Integration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "ebb0e5fcb5ad48c9d1dc4d42aeb720d9e44782a7ed56de84557f1c5250d5eebb",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPmv2ModelTests/ProductionPmv2ModelTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "21eecdd47b5a31e9ac3a73b65b0a208c83be027a50af8ce36248eefde780397e",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionPmv2ModelTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "e5c293d6df7334b6f0beb7d069fd0794e3573384582dd2e79175c19096e28d6c",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRandomIdleIntegration/ProductionRandomIdleIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "05d547c8cc48f6075b5f1884bf90ae37773f52131c31e7d27d89a3d910f51721",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRandomIdleIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "22ced0e18a9f097b9dd36f39e937851cd9e0b171e841814d99f0d83afec14cbb",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRestSleepIntegration/ProductionRestSleepIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "05d547c8cc48f6075b5f1884bf90ae37773f52131c31e7d27d89a3d910f51721",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRestSleepIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "b1067e1ce654d7c2b18b687cc480d9e9522eefa3e8f00ae2d9a8d731c4ec13dc",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRestSleepIntegration/RefinementCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "821618a548eda40fe00615fbe696a9fdeafa653c1a6182f202aa6c3f775e1f1d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRocketIntegration/ProductionRocketIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "608301ca05f3a6b199ee219f2a04951814cae671fd200d1fae2cc98df49e645b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRocketIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "1ed1d9d4e2cea5f4914b32149599f768aa1b0551a313819ab6a5b95ebd96b3ee",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRocketModelTests/ProductionRocketModelTests.csproj",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "09270ae36fae6b767dd13ce76ea7d59160012416e32f15db57142ef11fb1e1ae",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionRocketModelTests/Program.cs",
+      "auditCategory": "A",
+      "auditReason": "A1",
+      "imported": false,
+      "sourceSha256": "be02a159cce95e26603b42f6bf8db3af503d815ad1b7bbfdd08b8a19a166d720",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionVisualBoundaryIntegration/GrabOffsetCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "dfc29c48606885cb6d2fd48f33fa983cd37f074109413fbcfad372e3eca19566",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionVisualBoundaryIntegration/ProductionVisualBoundaryIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cdaf52a3109b19876e1fe02a7a91a0b4d8baf670334ff7f7a8da27ae19f90ca9",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionVisualBoundaryIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0706ae84ba34b829d8f85b83aa8d61415f1ac24aed3d8985a4d19be618518a1a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionVisualBoundaryIntegration/ScaleSeatCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7954d587fedfde0df7f60452de076428e3a177e504bdb913e1f46ab2f8b3b306",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionVisualBoundsIntegration/ProductionVisualBoundsIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "83e19303f5ed1e4b9da3d4864614f76a1768091e14c13743cbdcbfb917672d90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/ProductionVisualBoundsIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cd48525372571c6be4610a88acf479545c87c11c4a421729bf015749172dfa38",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/RandomIdleIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cfa39a3b51c0e5e5949de4aa06df439ebf818b1a9074d403c968aa4163a13ab5",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/RandomIdleIntegration/RandomIdleIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/RandomIdleIntegration/TimerSemanticsChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2e6c79e6953a320d6559463e8a8cca96d4e396bd986d84d49bce67d52a53ea12",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/RestIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "fb6dacd05e86c551855cdadefe494e48033a9d2466387ecd8d4aa1c4211250f3",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/RestIntegration/RestAmbientChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "960d1162a275c0cd5baa7cd52ad52a3b16200ea6207ed115f4d213612762933e",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/RestIntegration/RestIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsIntegration/AdditionalWindowChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3d0816612ae9eb5add65e29d8826ffc34a8f1768faeeb3651d8b03480e5ae25d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsIntegration/AttachmentSettingsCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "270a02bcda9b3652b7aef8694d1cfb15fef10d9cb28c44e4081aac8fb2cf7158",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d964d049c29ca0703f925ca8176bafdf376ad8d0d625c6cd3392359fde76e828",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsIntegration/RuntimeChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cc84a080b5bdef09cb4bf5f40efe3ff9417e166bfc4e5db8dfafc90f968c2b57",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsIntegration/SettingsIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsIntegration/VoiceSettingsCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "7cff9782ba32ab0b5e5366984728a6ed64570f8f674054a68920ce6d1214f5a9",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsPersistenceIntegration/AttachmentPersistenceCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "b96e4561566eafe750ae913210482fa59e971ada00b4b4fa391694ac84301bdb",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsPersistenceIntegration/Cases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "3b4a125fa2634872fb1acce3c8212e1b15e3050f6e7835cd92c57ef0aa50ba05",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsPersistenceIntegration/DiagnosticChecks.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0688a815e5bc50b1bbbecd2a73841dbcdd617674bc0be5477abe38d9c6118dd8",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsPersistenceIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "fb550307e20bdcfbfb183387b4516036c276d9b36bb2897bc440c9570d4dbdd7",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsPersistenceIntegration/SettingsPersistenceIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0e008ca5e17d7352c2a3eea8b5b8227ec2bffb208bada009d3557398050d5586",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SettingsPersistenceIntegration/VoicePersistenceCases.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "6bf193622bd1345666439cf800d182528d1c4adc47373b3a9a9a5ecf6141eaf0",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SleepIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8298b5af5f326e4c0f03520b7c4b4b4cf564103a8248b079e6b0acab2a8293e8",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/SleepIntegration/SleepIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyAngry.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0f72057d7ed411a57a7a4533151c9f5f4b69d820602b40f588aed6f5bb9b4351",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyAutonomousMovement.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "75bddc98f0b60f80d9d14303b0f3af22f0a18940bef173c4e1eda66af4b2ae42",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyAutostartInstallerContract.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "6da7e75c8305c78d6d39d2a610cf2143568db5c39d8952bdef7dd2ad58d452cd",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyFallingLanding.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8e27531b92b67ccf6684b394ccad3623163c8570a44082e762eb5c092b22889d",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyLocalVoiceGate.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "2a28ad2404c593d1c2b28051d46637beefd402e2319d7fb013cb40737590cb7a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyMultiClick.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "9e79148cf6c93dff4d638e1af5a89d052f10f76ebaa58ea52159f610e27f2848",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyOversizedCrossScreen.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "46b94aa86935c5dcd941bebe6aa8205e2e56b4350e0320e2dbb18af0e000f4a5",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyPmv2Attachment.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "eb463c755706a2a8f4fa45f40dfef7bcf7acf2fa48de73b501defdaf17b224ad",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyPmv2Motion.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "1a4f428c4d7c189cc6301d3dd469e1f42eddd4f39e3fc46207ccd77687dfee6f",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyProductSingleInstance.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "433b740074805489bc09613ccdeb768763a6c32c0a83a4c8ef31fa8c39738e56",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyProductionClicks.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "df52bfdcc0fb18a65784e3912286ddc66f3cbcb868318041221e4ccc4aa60340",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyProductionCrossScreen.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "d14c59608312cd4d8b58ec74b27de63fad5fc6d31f129302a60587d7de11c8f6",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyProductionPmv2.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "e230ea35d27cceedb6825bfa15b2c86bd947edb0317d58a74e43c28018650b33",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyRandomIdle.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "217e6fdbdc5ea2179c63ef718a78e48015c08f4e062902e77fab14227bd24003",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyRest.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84814db7123980b54f31621d39f2289bb3a5a54d98b1351b51aefa6a2a3eefae",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifySeamHandoff.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "09a8a107087af480823b26ddd4bafd7826472d93c1b63dc5980cc9b860bacad6",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifySettings.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "b787dbfbc5390bafcf24948b3cf47fb9e06a3c07be60c062b42d6dec7bda1e0b",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifySleep.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "fef1871a37799161bc77237c2469d4619a5dc8408635af6d7d1064dff5e5509a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VerifyWorkbench.ps1",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "15ef99e6b01c1d6c3a91291bad35875c109c9b77903f1d2fd85ca17b2f482555",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VisualNormalizationIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "722442d41a839374a24a108718d5e4d4fc6a9c94cfdeda07a60e5521d2e74067",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/VisualNormalizationIntegration/VisualNormalizationIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "8d0b00074f819c0889e6b910ebbb56de8d5062a6b24f3aed1b65a002d3dfc9a2",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/WorkbenchIntegration/Polish.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "a3db28281b1f1f662cae66b5c1d66e9e325608e6327b894721b91eb2fc818105",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/WorkbenchIntegration/Program.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "654536c6ed85a9463e983de154c17f8c042bf28bd6287daa65ff7c49d9bd1f17",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/WorkbenchIntegration/RuntimeAndLayout.cs",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "10d987fb784675aa496bb2396f208052d62026d8184140325ce62d2de3ab9501",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tests/WorkbenchIntegration/WorkbenchIntegration.csproj",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "84bb48b0c2c458dabc541baf40c286444844aa6ed1e22881cb8cd579bbd96e90",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_angry.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "cd5ad3ef7bf7caf928255094dee4b2a12fcc543b051d38ec5effc5b35814e141",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_animation_visuals.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "e708f45dcde1efecba35fd3e03ef9c74555309b4c4dbc3a0998101dbb66df385",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_click.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0d7c53ad2d15dcbfef25d8f765283bccb8d05d323b35d4a0ac4553050131cd2a",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_movement.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "0d0932125faafe5498cf2563f760af37a405e31b124513d94db74bb7b8a90274",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_random_idle.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "12ddc950fcd9efc30ee19078949626f7b43bf98e4f28bf3c82278a65c0ead3da",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_rest.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "48ff573d6ecc387a429360f951db0fd84e42f733a2f9ab6acac2b25f735a8c29",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    },
+    {
+      "path": "tools/analyze_sleep.py",
+      "auditCategory": "B",
+      "auditReason": "B4",
+      "imported": false,
+      "sourceSha256": "108f43d0c25681a9717baf609a7fb7670d4e0986505073b8fc0777b46b44b153",
+      "reason": "excluded: media, local packaging/tools, private or asset-specific integration, or rewritten public documentation"
+    }
+  ],
+  "publicSnapshot": {
+    "phase": "GitHub-P6C",
+    "date": "2026-10-28",
+    "publicFileCount": 196,
+    "hashAlgorithm": "SHA256",
+    "selfHashPolicy": "EXPORT-MANIFEST.json is excluded from its own embedded hashes to avoid circular hashing; verify its separate final hash locally. sourceSha256 values retain original provenance, not candidate hashes.",
+    "previousSnapshot": {
+      "phase": "GitHub-P6B",
+      "date": "2026-10-28",
+      "manifestSha256": "51896dd5a2d34436fdf9c292bbbfa35c72cc5b0ee4555f7fa32d452c4d6be70b",
+      "readmeSha256": "6807b763a3693669341aabb41a04317cf089457ce0dc92d8d4f1111668301a93",
+      "gitattributesSha256": "fd08158f55418b535370c6f18b0e2f8ad09fed6a7009c0a5808d3c39ed31a74e",
+      "whitelistSha256": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c",
+      "previousSnapshot": {
+        "phase": "GitHub-P5B",
+        "date": "2026-10-27",
+        "manifestSha256": "bc26ba1c10cc5accdfb82265c539ce6371c2b43fbce01418c79664e8f35a4bfb",
+        "gitattributesSha256": "16e4f6bfeb074b6dcc1d32f209d3a104ce68086fc6619041d9a6ecd01bf6be1b",
+        "whitelistSha256": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c"
+      }
+    },
+    "bytePolicy": "Tracked root .gitattributes uses * -text to preserve approved raw bytes; no Git text/eol normalization or local info/attributes override is required.",
+    "sha256": {
+      ".gitattributes": "fd08158f55418b535370c6f18b0e2f8ad09fed6a7009c0a5808d3c39ed31a74e",
+      ".github/workflows/build.yml": "86631eab88889243e318bf1499a9ab1d5fc505bd01567336c7df2031bf4b64ba",
+      ".gitignore": "f5bf6ec5092b6ca0ba31cb3933af676dbbd745eb644117c20b904efe04bf6e88",
+      "Animation/AngrySession.cs": "6dd182431face81011fe8352a9dc1a2f07878e6147630abab0ff17c814f67659",
+      "Animation/AnimationVisualProfile.cs": "3eee955d29dea439ceb0e7b05fa9620f66ac6f8beb7b89ffae31d4017fd9220a",
+      "Animation/AnimationVisualProfiles.cs": "e85c54f9fce9a764c17e016edc4e54bcfc1f8e4b8c48c17cca00dc8626faf3da",
+      "Animation/AutonomousMovementSession.cs": "fd12667bb4912b1265f0dcac05c78ffc8c218e42ac59e095fefbc9b511cac6ae",
+      "Animation/ClickDefinitions.cs": "7607d7904776b83466fe2e632b474a0723131537811eb61d4c51385b688f96e5",
+      "Animation/GifFramePlayer.cs": "c0d0c38a49ba133bf4229f776bbf555d2b23056ba240894ce764cb72df5c70a6",
+      "Animation/GifPlaybackCompletedEventArgs.cs": "8886b40ed5c9d15c3f9a0c9be7fe107e63ed0d782388ef12fc15992c472232e6",
+      "Animation/GifPlaybackCursor.cs": "377669ffe527ca891d67840cbf32751c6b3c2a4225f225734ddf5ac843a98f35",
+      "Animation/MovementDefinitions.cs": "aea5ec67e14b7856f33ab6856021d767cd8a8606d832444d2ccbee7948bc1b99",
+      "Animation/MultiClickResolver.cs": "93519f7a66d19aa53c379418a1e93edb2179bfb5ca8cec31f21f1a7e6ba682d3",
+      "Animation/RandomIdleActions.cs": "9cc38f72c69b27eb838a878a209e50ff750fe24ae1337813b15bdc16be541d89",
+      "Animation/RandomIdleScheduler.cs": "c7c84096d462fecdc417719dc016e4cb4b4cbc24b7b286e1e8ca4b1c7688ad51",
+      "Animation/RestAmbientActions.cs": "a23c0a8a04c680e3537021019a83e492ef1aeb1035b99eadd4c263afef86ff6a",
+      "Animation/RestSession.cs": "d5c599e38a8366a08e0c2c0abf73a780f596e49b503b1f228ade352b6c9d00f7",
+      "Animation/RocketSession.cs": "de3e7c7c1e241872ec25bfb6305aeaedd0d486cdf0ed555e696448e95d920b6b",
+      "Animation/RotationSession.cs": "90a91450f9c9100b1cd54e5b64ac1e6447a727de1c5287fc3a96e13ddd4d8cff",
+      "Animation/SleepAmbientActions.cs": "5b5457a64a8c688c735fdff87c91c4508a3ea97561102e58285a49fa51ad8796",
+      "Animation/SleepSession.cs": "292093ce27fee3d85fad6bbf616006e785934ec97c3c3e2faa55765450555bd2",
+      "Animation/SleepWakeSession.cs": "4231bf2a68473445f200a1ed7d5112bacba56742d300693851e4088fee1b4fb7",
+      "App.xaml": "125e95389205899c086b4d482759ac2174e6e959ae122c21b18d95692fee1453",
+      "App.xaml.cs": "5bd65801afef6521f5b56b0eed7f4f1117de920c296391aca0be2fd245f4bf56",
+      "AssemblyInfo.cs": "138a4e83b2a1e4c941fcea420e0903b4ff25ce468c462d8a4d16bbb87aa4ee4b",
+      "AttachmentContactProfile.cs": "3fdda646c9159572c2be650ccaaead1f64efc1a93a35ad4cc82b9968505b3a34",
+      "AttachmentGeometry.cs": "7807e85f9f4b2c5ed800c9db3232c4cbf543ad7695a803b5425cca6945f0d80a",
+      "CONTRIBUTING.md": "745b4ffc91650778c9a7f4b7ff1b96e1447a30196112549e9b417a93ff1f4320",
+      "CharacterProfiles/CharacterProfile.cs": "546c185c2d8b73e51a0546f3a1f135d39ee82af13bdcd39596dec056f33bf85c",
+      "CharacterProfiles/CharacterProfileFile.cs": "50fbea81e54b8edefed42cf5f08c6a58ed3fd30fee7108f27179d16040c8e2fc",
+      "CharacterProfiles/CharacterProfileLoader.cs": "8e961a0fa1c8996eed810e283b4cbad531f3cd875442e8d0702f3b623a0a8264",
+      "CharacterProfiles/CharacterProfileRuntime.cs": "fc1c7d2c4d3d4f47544da99d3a791b36022476ba094a9def4dbaf5853edc7dde",
+      "Coordinates/DesktopGeometry.cs": "b1d96666f0bbca84664b6bd1927bc8f3a73202552bb1db98e9452de42606765e",
+      "Coordinates/MonitorSnapshot.cs": "4d010bf948ef9e667adaee386968850f25e7510c116ea82f72b4ccd0f6bc0253",
+      "Coordinates/MonitorTopology.cs": "fc68fc214e8052fba9ff9ec92a283d27b02fd200c9c7f4667b02d4a1ad7c6b8a",
+      "Coordinates/MonitorTopologyService.cs": "2e31ad0bc6790bb1a8cafd8b6dec0b55605c9dc8acd44ee795fbbbac35ad66e2",
+      "Coordinates/PhysicalCoordinates.cs": "d5eccbc75a6c7f23031634a3bbabe9481fbb09579311339af78c95f9cc593160",
+      "Coordinates/Windows/WindowsDisplayChangeSource.cs": "fe08a645991b2639a94e9b7bdb881b426ed326dabd0b9da0c4956a99b0a89510",
+      "Coordinates/Windows/WindowsMonitorProvider.cs": "4bdfdef3098bdc3ea1064ca80e7eb8358b2645d5168c75a65d4c1301decd5f8e",
+      "Directory.Build.props": "20d4671ac42ab7e3932c93925621a39d3370154a8a5b41b1c34845da62a5ab09",
+      "LICENSE": "a7cf8c8c6607e78c5e32b88cb0ee909db753e69f5b65f7e9618fb5d6583d89e9",
+      "MainWindow.AngryInteractions.cs": "724a3c6ce6324ce8682ab87757e5ab250c4075780435553e01b6e3f8d4f61116",
+      "MainWindow.AutonomousMovement.cs": "8ad938e49438a40bfb99d034afd0a77db64fdebc240dca34b8883a303a690fd6",
+      "MainWindow.ClickDiagnostics.cs": "343c06246b45bad397ac1cde163d6bec909b9fbb2f492e08dd5c004cbd69ceea",
+      "MainWindow.ClickInteractions.cs": "d8585d2a7601aad259ac04ae727de02d8b3a0258cbc7b37f1c99aede0c1c3d8b",
+      "MainWindow.Pmv2Attachment.cs": "e5606147740a326a91866ef2caef7298bff751e9980d5879161b848ea41e188e",
+      "MainWindow.Pmv2AutonomousMovement.cs": "05c7166753760ac1f01f9d3fae7b789414acf4f8bfa6fb19c9eaf5454d4b1b23",
+      "MainWindow.Pmv2Boundary.cs": "5655bb96b583efe7979eb7dbaaadcafdf60863d00245f11bba6c8d514e40c5ca",
+      "MainWindow.Pmv2Clicks.cs": "d0e19e5318b69b13e8e633b3cbecfbfb399555061e71c42bd40439b51d8b5022",
+      "MainWindow.Pmv2CrossScreen.cs": "461aec2a9dd519b61f1915c52fd519737b34138b4d1fde748030357a0f2fd3b1",
+      "MainWindow.Pmv2DragVisual.cs": "e95c11766ff89a683faa5ca161852f634b56bc5b37eae84f7495cb0a63c4db0a",
+      "MainWindow.Pmv2Gravity.cs": "a80a7eb0705dcacaad7122e8c9f7b4d80fbcde0197f48b9d9abbf3ef518ab827",
+      "MainWindow.Pmv2GravityLanding.cs": "6e135dc1a0be1ce907c197b5bbc15b09858d966f90248a6d715a6f7505b399cc",
+      "MainWindow.Pmv2GravityThrow.cs": "706ecfad521abfe7de9f678209e03e0319a3a781858a28a741c787d84762aa65",
+      "MainWindow.Pmv2Motion.cs": "ac44fda164183dc3b2082321a5c963615555d4b4f7661b924f42d39ab3e984b9",
+      "MainWindow.Pmv2Physics.cs": "c5d27b1e63e3248cf33b67514e4639bf81dc127fd8e1d43e3686ae25dfafe782",
+      "MainWindow.Pmv2Pilot.cs": "147c02786b5dda1525d76d7f9d5225c8d13a0b6ed42a0c9c1a4497f9c73ed1a5",
+      "MainWindow.Pmv2PlanarThrow.cs": "39cd103c67bbcfeb898d76c8cdb8deaffa180340691c57bed3df535040a9675d",
+      "MainWindow.Pmv2RandomIdle.cs": "8482ca5b3e62e4fe337e65c11b783037d04eb1889ab53c45ea021a5e5c77f442",
+      "MainWindow.Pmv2RestSleep.cs": "5798f1cbbdbb7867a7e6805b9f0ecdf29b0eb51f806b2565c961971f50357e53",
+      "MainWindow.Pmv2Rocket.cs": "30ba7b14badde2a6aae260f064140c4a9a7cacd0697fb5b2059aefe0a0b9b48b",
+      "MainWindow.Pmv2Seat.cs": "767c0788069cf52ce3361b124ec65851f62fedf439f2016253b937b49ba00e4d",
+      "MainWindow.Pmv2Size.cs": "e451e213303dd9ffe9534dd8501b916d5de99dea12b6d31f0e1a6d0ef214c12e",
+      "MainWindow.Pmv2StartupVoice.cs": "2eab84b58c27dba3f53107e2260c6548443c11f1ca0bdef32098ecfa4696e7ee",
+      "MainWindow.Pmv2Visual.cs": "317bdf58ba83acebd31b43ab927caecf53d4c3fdb1f3a5fac1f8b38139dc4f06",
+      "MainWindow.Pmv2Voice.cs": "3d751f7e90adeb816e2b6c3eea0c63922fadc41b019111ff8d0d0e26724dd3a5",
+      "MainWindow.Rest.cs": "95ae77aea2c7e7b606dbb53b12fb7a8ce728cd97771732cbbe41625e2b92af42",
+      "MainWindow.Settings.cs": "9bedae31764c329c43af21a382ce020bace05e012bc707b9a40fb12ed79a2a71",
+      "MainWindow.Sleep.cs": "a90bfd4c15d9d68b66634022f9693f416ae2c1711ece783c2108b1dce8d50ec3",
+      "MainWindow.Workbench.cs": "8c28135847771d963c1fa8b064086e63c0b0b062c86941cd3778ac5ab8a27f49",
+      "MainWindow.xaml": "496715a47d9b1c3832280d81be191922a44aaffbb947e47749961431791a986e",
+      "MainWindow.xaml.cs": "9070680c713fda7415a424c275655003b35c5714f5e6e5b4bba8bfa3307e5e10",
+      "NecoArcDesktopPet.csproj": "d659583b24bd2a80a8fc188a5be3c0a15d66af53cc9518b43ca4bd359738258b",
+      "NecoPetMaterials/README.md": "d610019ca4ecac5fb938d1b59d9f8b78d63a4a778d82b6da8c0c68062e59c11e",
+      "NuGet.Config": "15ba1d1915b1944909ebb32a70c2c3a004e33686dedb07252f2fe52168ec5109",
+      "Pilot/Audio/ActionVoiceCatalog.cs": "6c364c74c696931ac7d649323b3bbfae6a2db0f87ada480d92318eff6e985fcb",
+      "Pilot/Audio/ActionVoiceService.cs": "67dbe1d0ef1c5a549be412cf8de9631d76efec3c748417918d842e0595964986",
+      "Pilot/Audio/IVoiceAudioBackend.cs": "7f3fc9530f9e56a7bd1ae0eafd52c6ad4314fba85f26ff2ce7f6525196375b33",
+      "Pilot/Audio/PilotFlickVoiceService.cs": "9b3d0531ae477f3da531750dfa5e8b70a9247c01f93779b9c20d1e0d319f7b2c",
+      "Pilot/Audio/PilotStartupVoice.cs": "622fbae93242dcc81e4b61239f9ed55cce15c597874f4e2deb782ca191d96d3a",
+      "Pilot/Audio/PilotVoicePlayer.cs": "33461165b357a233f118220f6665440511192ef9a6d8e7a06e11a867113c2a8b",
+      "Pilot/Audio/VoicePlayResult.cs": "4d1f42bbc1d9542cb06405fbc53287192db8fadd5dccac932364e22cafa712e5",
+      "Pilot/Audio/VoicePlaybackEventArgs.cs": "da22435ed5d2bb4f445bb0de4b5fd7da490b7a6c49aaae1f90af9956ad4971ad",
+      "Pilot/Audio/VoicePlaybackState.cs": "50db14fcd01281346a94105d991c14435e1a676afd9c585bda0828ccf669fbb8",
+      "Pilot/Audio/WpfMediaPlayerAudioBackend.cs": "be81ee5a6ab35c2b5ce030297f01a883d591f0d189313b949d9f96d6c6988bb5",
+      "Pilot/CrossScreenGeometry.cs": "d715b195e51d8a52b70e9beb97c3a0b95973007dc19b1588ff3fa0b044675e5d",
+      "Pilot/DragVisualPlacement.cs": "6878fa05a2e0fccf2e4b5d89b566cbdcc43524c351356b8d1ee5729a5958d1ce",
+      "Pilot/GlobalUsings.cs": "b1db6b638ac83e78d7e2262477c1a7a601fd78a3883a0e8c46e45bf3c80674c0",
+      "Pilot/IdleEdgeSeat.cs": "9976a270814d8211cbe6323af2f3cedc555de3b430845bacd776e5ac0fdf9b23",
+      "Pilot/Physics/CursorDwellTracker.cs": "bd334faed82e34732c3311c64a266565f7f55bb7541259938fa7eab98f41ec55",
+      "Pilot/Physics/GravitySession.cs": "f743459924a686d2a4fe7f6f693133b5e335ce6013f7266a303d10440800d27e",
+      "Pilot/Physics/PhysicsBounds.cs": "952a001ae57bf7fed58c10ab05fc3bcf07a98a78e15b307de4b3e65af4f888ab",
+      "Pilot/Physics/PhysicsMode.cs": "f1d5e085e63111ed086d259332d2b821958f6eeb9aaeb8f2c2e9024ff57867a0",
+      "Pilot/Physics/PhysicsOwnershipGate.cs": "d36deda89da418f5066292975fdbbbcca7a6cc8aa57fd4bb5d1946ced538c0d8",
+      "Pilot/Physics/PhysicsStep.cs": "3ac0d45f6dee0a6a46f9972b150b48dcc093a8895b18dc63317ba3f32b41ddd2",
+      "Pilot/Physics/PhysicsTuning.cs": "97d3c593d29a0b6d81c96b502f27217563293eb8e8856f6e2a196620dd529c48",
+      "Pilot/Physics/PlacementReleaseClassifier.cs": "07084e958f94db6ab46807ff52858bed4ce8e2ec0f0806f2dd9e734b9f81deb8",
+      "Pilot/Physics/PlanarInertiaSession.cs": "fdc450f2e92c20c19f71eed7e8f49d169667475516ee9ba310ae1a1147f2ba9b",
+      "Pilot/Physics/ReleaseVelocityEstimator.cs": "4d9da4afdf77af5d363637a11800bbd57e96c0457f6a3ad10aa3f0ea9974ad35",
+      "Pilot/PilotApplication.cs": "9f31d9e9e8b70bdf882a8d42d9b21fe08a5feefc94b14d4a2794fdf67c900a9a",
+      "Pilot/PilotAttachmentCadence.cs": "4e874a4059ec9943f39d82dc9953393af22c70f1ed7fc9dc84d60c5f5d2a6d83",
+      "Pilot/PilotAttachmentGeometry.cs": "aec2d1dfb0eb1718cecf53f9f281618a97da6397a0540a0822aef89c77cccc86",
+      "Pilot/PilotAttachmentTarget.cs": "ad1a9ac4c1e12a68d62425faad53126ebc87c1267dc82f293aa192f6e0fa50da",
+      "Pilot/PilotClickOwner.cs": "ff380f01bee8569624f92074acc6f7a78360feb8b6c7068165b1a08333f7b4c3",
+      "Pilot/PilotEntry.cs": "c5356e6321514bc2e493210e84e98f1b3c0002849a1e6a9fdef9ee4b28ef3003",
+      "Pilot/PilotLog.cs": "0aba276f9cdd121a5ff9b4a07d212f49298cb720db19ae846bf2cbb80df88304",
+      "Pilot/PilotMotion.cs": "eca9f3b8f6d2c9401261ff1f6afd04f6af868b746d21fc3c727063ccd258e836",
+      "Pilot/PilotNative.cs": "456cc3282ed66e9ce6d1e05e770ec70d3dad079eebcc65e88e1cbd8d9952ec94",
+      "Pilot/PilotOptions.cs": "8934e99576c73467cda1620a4ed3110e338aa9f9cd39f0c403c319e10e8a0307",
+      "Pilot/PilotRocket.cs": "1b8c3e74a85a40c65a1a5fc552c58252edc147041c3f9ec455fc98dcb39dc8ba",
+      "Pilot/PlacementPublication.cs": "d75a41b953fc6827e4373975bfc53dce0b40bb82679482616e3de42659d31f36",
+      "Pilot/SingleMonitorDrag.cs": "8cc2d1330f484b6acc3ec1437cae6b8c9b43589594e9802e1af608b8df5bcc69",
+      "Pilot/app.manifest": "5267219a3adbaf88aaf7093a016532d31543ffae2a171cf8be9ebd8f5466f414",
+      "Product/AutostartManager.cs": "34492d14f676312ab94dc707f6d655a79937ddc7687cd85981d9141c38f728d0",
+      "Product/ProductDiagnostics.cs": "1ebcb1f151b6908642d916a02c4394c0f2c373c4800b79dbfb2ea44870cb9a20",
+      "Product/ProductEntry.cs": "65598cc491c0928f5cb37db0ebecc7c98990b7a9d221d7e4077b6c2601c2487b",
+      "Product/ProductFailureNotice.cs": "a6006f4daf03beb339e0d467b3d7521e362773dffcb2fd1c51c42f145a9a016a",
+      "Product/ProductSingleInstance.cs": "162221f6a4984c17cc399c199e8c2ff2922e7372b0147498ae3ba8569aff7677",
+      "Product/app.manifest": "1afbaf55ec54e111d0c68e06823853cf2853baeb0f02b476be64fe94c187e4ba",
+      "README.md": "39f27292c397baf18924eba7176606b43a867bad7933ad088686220220bb92b3",
+      "Settings/AttachmentSettings.cs": "4f5d9c2076a06341548698b62e5f7c766d772dbc66f1b813edb88bbd2bedfc51",
+      "Settings/DiagnosticsSettings.cs": "ebae90b88d0fda49a3c076df2d457feb5bcf65933d20ba1673c569ff0cfb42ef",
+      "Settings/InteractionSettings.cs": "3129c9ef37f7fdb48c6b63551ecc921ff0accad32de19a69f49e9a9fb9ca9a24",
+      "Settings/MovementSettings.cs": "97338bc994361aa6b0c2576e2fed95a16417881e849c81162c62a38c66af046e",
+      "Settings/NormalBehaviorSettings.cs": "cb4a40129d134734896ca41d77be8901add6b7ae4b58d36602db28ddc8b84997",
+      "Settings/PetSettings.cs": "89cfe15f8adf1817ac5659990207dd684cbf5d92d941c6331365c95752967b6c",
+      "Settings/PetSettingsDefaults.cs": "721ad44fdcf4aab4f9d81b848408e990758348a26ca747ad65c556427c6564d2",
+      "Settings/PetSettingsDocument.cs": "850280ca321ddf4ded5153415c238abf4002275125a7d0a18b195ea3f2124a47",
+      "Settings/PetSettingsStore.cs": "e012176f25fdcc18b2eb7fe6aad92a19789c7a86e547d1fa935eb8246cd804af",
+      "Settings/PetSettingsValidator.cs": "100ea9b08c1c4503fe55d21ea46236460919f9521f753d4e45786e4326278dda",
+      "Settings/RestSettings.cs": "1c4e1b874fefee2f44d5d1f660d5c48a2538e3776fcb0d891cc4310c95eccbd0",
+      "Settings/SettingsPersistenceDiagnostics.cs": "f2f3233d03a7d7c813590ea5a13486f1097328acd1747723f0522abb6d2108cb",
+      "Settings/SleepSettings.cs": "ab941c7bc09078445825e277b81c6d150beddef57da45e1e9226938861eae343",
+      "Settings/SourceOnlyPaths.cs": "9d52d1e00d1c8d8a043e42dc6f399a427c211d14632312249a0bdc232232317a",
+      "Settings/VoiceSettings.cs": "9ab4c5dded6f7fd4e706c5751bba8ef4664083780aced4cc1d08d6e92729f83d",
+      "SideAttachmentDetectionProfile.cs": "87c45012845ad0d5be7b81cef9587fcdfca387131bde0e20d0ae74e08c81b9ce",
+      "THIRD_PARTY_NOTICES.md": "4c3a372a6c18a7cfe7f0b9d9217e469e8abc7d1dd4cf5dc6053b649c2a009d17",
+      "Voice/README.md": "d610019ca4ecac5fb938d1b59d9f8b78d63a4a778d82b6da8c0c68062e59c11e",
+      "WorkbenchWindow.Fields.cs": "536ec10086041f518c755af067fed4aa2a4890ad0106b78d87fa347a0a205b7d",
+      "WorkbenchWindow.Styles.xaml": "0535ef1748fda1b6db09ec564406b30b90a6b6e3a8c96b75896aa04d9fed3c3c",
+      "WorkbenchWindow.xaml": "fb06cdae040aa1d2210d31019e786835903a417b807fafdc02c5d4c408e1a7ab",
+      "WorkbenchWindow.xaml.cs": "1a2e4ea89cad61a3eae68f0e4799f2b503b90974f14c1983ac287018599df39e",
+      "assets/README.md": "d610019ca4ecac5fb938d1b59d9f8b78d63a4a778d82b6da8c0c68062e59c11e",
+      "docs/ASSETS.md": "9dcadab98c3b2ee8dcd9ca5f1d374c57e25520ad917a0b0f994519ae17ad53e9",
+      "docs/BUILD.md": "2f4e93187fc0d759c8eae8728f756a7f87592f25ee99284eb2fc39b2bb2b230a",
+      "docs/CHARACTER-PROFILE-MIGRATION.md": "5ed4c6caf12b9b76d013608bf26e29786b23c03503c3651aa57da686a9fc99b2",
+      "docs/CHARACTER-PROFILE.md": "f11b5c1745a4b152c0dab6563dca7d9e4b5d902692cef3503a077b65ccd7a14a",
+      "docs/PUBLIC-FILES.txt": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c",
+      "examples/character-profile.neutral.json": "9cfb0ee327ed071dd481bdda6b26fc4154c778a64f448a83eae8832c2c298ba6",
+      "global.json": "d11e5ab12ec1bdc460669fd406da4cdf4528687a4caa7149f01ccac44aba8708",
+      "scripts/verify-character-profile.ps1": "6179b2a31f7c66403896e8505f772818a23884a4d8bfb46729f0384340c48d2b",
+      "scripts/verify-source-only.ps1": "5e498614099fadff3d3990401ac28fc5ac13c244d66d26bb75965a2b0fbff6ac",
+      "tests/CharacterProfileTests/CharacterProfileTests.csproj": "ee0d3dab53982307adc2657a5513306b483622f4222235f0590a468aba5475b8",
+      "tests/CharacterProfileTests/GeometryCases.cs": "cc0d9451ba4a540f36a0410f9ecff3cfa3e65a56a8f90828248b9748a8fb95ac",
+      "tests/CharacterProfileTests/PathAdmissionCases.cs": "a22b4ecdd0619f3e08270f8f00e267592f57b24d9f92296584dba7f3f072b81a",
+      "tests/CharacterProfileTests/Program.cs": "016abbec493effb0e58c26fb14491a04eb78eaae43d7eff04ade896fc2ec4b28",
+      "tests/ClickReactionTests/ClickReactionTests.csproj": "0f6902d9268bb6b00ad04c5bd0c3655ed5782bb337c734c668ed2fd09537f0d6",
+      "tests/ClickReactionTests/Program.cs": "a7c2ad3124374a49e6106059720aab085ce23b7fa528e814c8c7c40a2127b4d4",
+      "tests/CoordinateGeometryTests/CoordinateGeometryTests.csproj": "2f6d6ecfed65011f8ab2e665bef626203c8ad8392554332bd6308d2c53c86d7c",
+      "tests/CoordinateGeometryTests/Program.cs": "0c3b546376742796180297bb1cb1de37257c8e0a8d47f99fa0de0c1fe8a9f332",
+      "tests/DpiHwndVerificationTests/AdmissionTests.cs": "c6cef6ba38a1e4276788b74be896b0fde6b9bcff87d81993d7bda7c925e2926c",
+      "tests/DpiHwndVerificationTests/DpiHwndVerificationTests.csproj": "24d96149453ce4057ad91cff753dacf29c0f900e1f68590e7c17c4be1bf9cc68",
+      "tests/DpiHwndVerificationTests/Program.cs": "46c738f9186074ba61a3a80be159a5e79cdb8ba1e8d73fc4985b364b0966621a",
+      "tests/DpiHwndVerificationTests/RecoveryTests.cs": "fcdc425fcb77536a9ec16c081d01d8492170529ca0946c08aebb48f425915313",
+      "tests/DpiHwndWindowsProbe/DpiChangePayload.cs": "659f2375842c64ad5c3deb2b9ccb96c879072bf0de642c7cae71d3c7bff829b9",
+      "tests/DpiHwndWindowsProbe/EarlyRecovery.cs": "c01c2e86f52e1d38bf16dc92d2ff91d65d93d6fa7e1ae95b898b359a2bc335b5",
+      "tests/DpiHwndWindowsProbe/ProbeGeometry.cs": "70dc9e092a889a6b0320d1930044bafa189a327b76db6d197a5202772a598b73",
+      "tests/GravityTests/BallisticCases.cs": "15df11294634fdb126e781e8d58bfdc7fba6465a740971139a51063872611a56",
+      "tests/GravityTests/FeelCases.cs": "011ae81f7a00adc680a5d7c6a2194dd22b296d03e9871a3e4c195d5041ef114c",
+      "tests/GravityTests/GravityTests.csproj": "bba298628a260081dc80910aa450fab6037d1eb3c79569feab714a762c2867f1",
+      "tests/GravityTests/LandingCases.cs": "72919f52f2c56c12dc86947f7616e2dc9571c2affe89bbca8fb7ae8a51b7ae2f",
+      "tests/GravityTests/Program.cs": "7617573c058198722e511e0bc8ecbba1ac28d1570a634780b9224f0d57d3b57f",
+      "tests/GravityTests/TrajectoryReport.cs": "8703d06e160a16ddfc342498997629439fd21008f400f464a6ac6f618603ef0f",
+      "tests/MonitorTopologyTests/MonitorTopologyTests.csproj": "5fd6c8d159c92c57e4ac5051ce3539241cd146e2e1e45bddcd342ab8acffd819",
+      "tests/MonitorTopologyTests/NativeCases.cs": "3698ae9480856e7b5ba6e522e1b32c0462aaabdf35d251ca400d1ec7bc513c78",
+      "tests/MonitorTopologyTests/Program.cs": "ff889171ee2eae3bf3c9be3378db5f7c85e190ccaae6335c931db1494961bce9",
+      "tests/PhysicsGatingTests/GateCases.cs": "4473221df5e871bf79cd0e6e7a924d479e0cfcd6f6dc7b8b836a9b7febd39c6b",
+      "tests/PhysicsGatingTests/PhysicsGatingTests.csproj": "1d6302b186dc4cc85cea26b6cf8c3b9aa4b5aecc4ca189a04537095250b6b535",
+      "tests/PhysicsGatingTests/Program.cs": "cfeeade5d829e7b7d00a7629084ebb92fe0bf881b6e4aa7b62d67d450034c8c5",
+      "tests/PhysicsModelTests/GeometryCases.cs": "1cde4f44954cf40df5aca10f7dd7f11c812bb17f3cb05e794776a6476de128b6",
+      "tests/PhysicsModelTests/MotionCases.cs": "3ecec0bdfef81b85a8939c6991bb31b08e12734af9da1378b687b6ff152b2eff",
+      "tests/PhysicsModelTests/PhysicsModelTests.csproj": "e34666f71b7e5aeed03174e3d1c5198895e44f269463ea473d2027d97f076ad2",
+      "tests/PhysicsModelTests/Program.cs": "e1b5569a59b45360738e457bf80f8259e2a57b5ff1c5efec118f92acf7ff9b2d",
+      "tests/PhysicsModelTests/ReleaseCases.cs": "a9eef7594b2c601daf8034f7b20f7d55ae0c39625b88a437a7510cdb20bf9d5c",
+      "tests/PhysicsModelTests/TailCases.cs": "f1281c9695cf4d854c24c3abd9fbe42c3bb1340bde51a1837ddf6957ab6aab51",
+      "tests/PlanarInertiaTests/PlanarInertiaTests.csproj": "ba33fd0e7ace959ef7a91f583018f0819124dbc070e8b034059c40980b2bc2da",
+      "tests/PlanarInertiaTests/Program.cs": "e3ea118a88e24b98d80cfe948d2bac90452e7a8d7d31f5ea9500f8797d07347b",
+      "tests/PlanarInertiaTests/ReflectionCases.cs": "d9428cc30189fabebb8b38ae1daa2d2a44c464b33cad5e59c1266bbc3a28844e",
+      "tests/SourceOnlyFallbackTests/ProfileAdmissionCases.cs": "38d7c9500356a6d86de07c2623a673ceee6c181dabc4baab8f6c417889fabd4d",
+      "tests/SourceOnlyFallbackTests/Program.cs": "c9f7d9de5f55175797dcc36e458b1db16ae98064bcb19587ae6874712d0a7b16",
+      "tests/SourceOnlyFallbackTests/SourceOnlyFallbackTests.csproj": "2b27330a836dee2a26d5238e9d99c3de82bccdc6ddaa78ff2196696788c8cdc4",
+      "tests/SourceOnlyIsolationTests/Program.cs": "6ad283f03aeefeac47988c775ba1f88b078d752716095aa1fad97577f2f51c3e",
+      "tests/SourceOnlyIsolationTests/SourceOnlyIsolationTests.csproj": "5328a5fb14924c63b21c1617a007ac535dbf139e5d0e15976b021ad15d786dce",
+      "tools/SourceOnlyVerifier/Program.cs": "d91f635c7d3125c83f9fbe6f33e05a33d8dbebd0ea073d12a37531a0745c7c73",
+      "tools/SourceOnlyVerifier/SourceOnlyVerifier.csproj": "c7da74be1eb8035cdcb2ab8ba1c81731b01d50787f5abfaf9240a5d45dc12ae1"
+    }
+  }
+}

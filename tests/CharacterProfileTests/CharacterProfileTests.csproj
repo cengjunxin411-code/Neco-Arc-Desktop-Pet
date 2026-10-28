@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CharacterProfiles/*.cs" Link="Profiles/%(Filename)%(Extension)" />
+    <Compile Include="../../Animation/AnimationVisualProfile.cs" Link="AnimationVisualProfile.cs" />
+    <Compile Include="../../AttachmentGeometry.cs" Link="AttachmentGeometry.cs" />
+    <Compile Include="../../AttachmentContactProfile.cs" Link="AttachmentContactProfile.cs" />
+    <Compile Include="../../SideAttachmentDetectionProfile.cs" Link="SideAttachmentDetectionProfile.cs" />
+  </ItemGroup>
+</Project>
