@@ -287,10 +287,10 @@ public partial class WorkbenchWindow
         Grid.SetColumn(shareUnit, 2); shareRow.Children.Add(shareUnit); choice.Children.Add(shareRow);
         Note(choice, "当自主移动和随机待机都可用时生效。");
         _movementShare.TextChanged += (_, _) => UpdateAmbientShare();
-        Profile(body, "悠闲小跑", "Lope", s => s.Movement.Lope);
-        Profile(body, "轻快小跑", "TrotRelaxed", s => s.Movement.TrotRelaxed);
-        Profile(body, "兴奋奔跑", "RunExcited", s => s.Movement.RunExcited);
-        Profile(body, "慌张冲刺", "SprintPanic", s => s.Movement.SprintPanic);
+        Profile(body, "散步", "Lope", s => s.Movement.Lope);
+        Profile(body, "闲步", "TrotRelaxed", s => s.Movement.TrotRelaxed);
+        Profile(body, "小跑", "RunExcited", s => s.Movement.RunExcited);
+        Profile(body, "冲刺", "SprintPanic", s => s.Movement.SprintPanic);
     }
 
     private void Profile(StackPanel body, string title, string name, Func<PetSettings, MovementProfileSettings> profile)

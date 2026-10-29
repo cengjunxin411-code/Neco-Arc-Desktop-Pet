@@ -3068,24 +3068,29 @@
     }
   ],
   "publicSnapshot": {
-    "phase": "GitHub-P6C",
-    "date": "2026-10-28",
-    "publicFileCount": 196,
+    "phase": "Source-Only-v1.1.0",
+    "date": "2026-10-29",
+    "publicFileCount": 203,
     "hashAlgorithm": "SHA256",
     "selfHashPolicy": "EXPORT-MANIFEST.json is excluded from its own embedded hashes to avoid circular hashing; verify its separate final hash locally. sourceSha256 values retain original provenance, not candidate hashes.",
     "previousSnapshot": {
-      "phase": "GitHub-P6B",
+      "phase": "GitHub-P6C",
       "date": "2026-10-28",
-      "manifestSha256": "51896dd5a2d34436fdf9c292bbbfa35c72cc5b0ee4555f7fa32d452c4d6be70b",
-      "readmeSha256": "6807b763a3693669341aabb41a04317cf089457ce0dc92d8d4f1111668301a93",
-      "gitattributesSha256": "fd08158f55418b535370c6f18b0e2f8ad09fed6a7009c0a5808d3c39ed31a74e",
-      "whitelistSha256": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c",
+      "manifestSha256": "3216d0374e763e88c8e5280c2cddd9dd0c83a9b41c0bdecea3f873439b950c6a",
       "previousSnapshot": {
-        "phase": "GitHub-P5B",
-        "date": "2026-10-27",
-        "manifestSha256": "bc26ba1c10cc5accdfb82265c539ce6371c2b43fbce01418c79664e8f35a4bfb",
-        "gitattributesSha256": "16e4f6bfeb074b6dcc1d32f209d3a104ce68086fc6619041d9a6ecd01bf6be1b",
-        "whitelistSha256": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c"
+        "phase": "GitHub-P6B",
+        "date": "2026-10-28",
+        "manifestSha256": "51896dd5a2d34436fdf9c292bbbfa35c72cc5b0ee4555f7fa32d452c4d6be70b",
+        "readmeSha256": "6807b763a3693669341aabb41a04317cf089457ce0dc92d8d4f1111668301a93",
+        "gitattributesSha256": "fd08158f55418b535370c6f18b0e2f8ad09fed6a7009c0a5808d3c39ed31a74e",
+        "whitelistSha256": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c",
+        "previousSnapshot": {
+          "phase": "GitHub-P5B",
+          "date": "2026-10-27",
+          "manifestSha256": "bc26ba1c10cc5accdfb82265c539ce6371c2b43fbce01418c79664e8f35a4bfb",
+          "gitattributesSha256": "16e4f6bfeb074b6dcc1d32f209d3a104ce68086fc6619041d9a6ecd01bf6be1b",
+          "whitelistSha256": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c"
+        }
       }
     },
     "bytePolicy": "Tracked root .gitattributes uses * -text to preserve approved raw bytes; no Git text/eol normalization or local info/attributes override is required.",
@@ -3097,7 +3102,7 @@
       "Animation/AnimationVisualProfile.cs": "3eee955d29dea439ceb0e7b05fa9620f66ac6f8beb7b89ffae31d4017fd9220a",
       "Animation/AnimationVisualProfiles.cs": "e85c54f9fce9a764c17e016edc4e54bcfc1f8e4b8c48c17cca00dc8626faf3da",
       "Animation/AutonomousMovementSession.cs": "fd12667bb4912b1265f0dcac05c78ffc8c218e42ac59e095fefbc9b511cac6ae",
-      "Animation/ClickDefinitions.cs": "7607d7904776b83466fe2e632b474a0723131537811eb61d4c51385b688f96e5",
+      "Animation/ClickDefinitions.cs": "608dd0f767bb10415bd2c2865818126ac4185f486f8fe2583680c6b51431c5a2",
       "Animation/GifFramePlayer.cs": "c0d0c38a49ba133bf4229f776bbf555d2b23056ba240894ce764cb72df5c70a6",
       "Animation/GifPlaybackCompletedEventArgs.cs": "8886b40ed5c9d15c3f9a0c9be7fe107e63ed0d782388ef12fc15992c472232e6",
       "Animation/GifPlaybackCursor.cs": "377669ffe527ca891d67840cbf32751c6b3c2a4225f225734ddf5ac843a98f35",
@@ -3117,6 +3122,7 @@
       "AssemblyInfo.cs": "138a4e83b2a1e4c941fcea420e0903b4ff25ce468c462d8a4d16bbb87aa4ee4b",
       "AttachmentContactProfile.cs": "3fdda646c9159572c2be650ccaaead1f64efc1a93a35ad4cc82b9968505b3a34",
       "AttachmentGeometry.cs": "7807e85f9f4b2c5ed800c9db3232c4cbf543ad7695a803b5425cca6945f0d80a",
+      "CHANGELOG.md": "88b321db1e809ae968cc5b12beddaa8f026b9ffb2a360eb4c36d759580417789",
       "CONTRIBUTING.md": "745b4ffc91650778c9a7f4b7ff1b96e1447a30196112549e9b417a93ff1f4320",
       "CharacterProfiles/CharacterProfile.cs": "546c185c2d8b73e51a0546f3a1f135d39ee82af13bdcd39596dec056f33bf85c",
       "CharacterProfiles/CharacterProfileFile.cs": "50fbea81e54b8edefed42cf5f08c6a58ed3fd30fee7108f27179d16040c8e2fc",
@@ -3154,7 +3160,7 @@
       "MainWindow.Pmv2Seat.cs": "767c0788069cf52ce3361b124ec65851f62fedf439f2016253b937b49ba00e4d",
       "MainWindow.Pmv2Size.cs": "e451e213303dd9ffe9534dd8501b916d5de99dea12b6d31f0e1a6d0ef214c12e",
       "MainWindow.Pmv2StartupVoice.cs": "2eab84b58c27dba3f53107e2260c6548443c11f1ca0bdef32098ecfa4696e7ee",
-      "MainWindow.Pmv2Visual.cs": "317bdf58ba83acebd31b43ab927caecf53d4c3fdb1f3a5fac1f8b38139dc4f06",
+      "MainWindow.Pmv2Visual.cs": "38ede51415df58afab826e506eb1f030534b08530e2679326adf136dc36324eb",
       "MainWindow.Pmv2Voice.cs": "3d751f7e90adeb816e2b6c3eea0c63922fadc41b019111ff8d0d0e26724dd3a5",
       "MainWindow.Rest.cs": "95ae77aea2c7e7b606dbb53b12fb7a8ce728cd97771732cbbe41625e2b92af42",
       "MainWindow.Settings.cs": "9bedae31764c329c43af21a382ce020bace05e012bc707b9a40fb12ed79a2a71",
@@ -3162,7 +3168,7 @@
       "MainWindow.Workbench.cs": "8c28135847771d963c1fa8b064086e63c0b0b062c86941cd3778ac5ab8a27f49",
       "MainWindow.xaml": "496715a47d9b1c3832280d81be191922a44aaffbb947e47749961431791a986e",
       "MainWindow.xaml.cs": "9070680c713fda7415a424c275655003b35c5714f5e6e5b4bba8bfa3307e5e10",
-      "NecoArcDesktopPet.csproj": "d659583b24bd2a80a8fc188a5be3c0a15d66af53cc9518b43ca4bd359738258b",
+      "NecoArcDesktopPet.csproj": "f79eac5ac7f82a52d52ac22e73b5d11929693a4aefe8be8b5f46a40e8d20f3e7",
       "NecoPetMaterials/README.md": "d610019ca4ecac5fb938d1b59d9f8b78d63a4a778d82b6da8c0c68062e59c11e",
       "NuGet.Config": "15ba1d1915b1944909ebb32a70c2c3a004e33686dedb07252f2fe52168ec5109",
       "Pilot/Audio/ActionVoiceCatalog.cs": "6c364c74c696931ac7d649323b3bbfae6a2db0f87ada480d92318eff6e985fcb",
@@ -3209,7 +3215,7 @@
       "Product/ProductFailureNotice.cs": "a6006f4daf03beb339e0d467b3d7521e362773dffcb2fd1c51c42f145a9a016a",
       "Product/ProductSingleInstance.cs": "162221f6a4984c17cc399c199e8c2ff2922e7372b0147498ae3ba8569aff7677",
       "Product/app.manifest": "1afbaf55ec54e111d0c68e06823853cf2853baeb0f02b476be64fe94c187e4ba",
-      "README.md": "39f27292c397baf18924eba7176606b43a867bad7933ad088686220220bb92b3",
+      "README.md": "d5748a513bb75a9a730125a4a5585de3d7369be16f8087bc1756d4a4428e4866",
       "Settings/AttachmentSettings.cs": "4f5d9c2076a06341548698b62e5f7c766d772dbc66f1b813edb88bbd2bedfc51",
       "Settings/DiagnosticsSettings.cs": "ebae90b88d0fda49a3c076df2d457feb5bcf65933d20ba1673c569ff0cfb42ef",
       "Settings/InteractionSettings.cs": "3129c9ef37f7fdb48c6b63551ecc921ff0accad32de19a69f49e9a9fb9ca9a24",
@@ -3228,16 +3234,16 @@
       "SideAttachmentDetectionProfile.cs": "87c45012845ad0d5be7b81cef9587fcdfca387131bde0e20d0ae74e08c81b9ce",
       "THIRD_PARTY_NOTICES.md": "4c3a372a6c18a7cfe7f0b9d9217e469e8abc7d1dd4cf5dc6053b649c2a009d17",
       "Voice/README.md": "d610019ca4ecac5fb938d1b59d9f8b78d63a4a778d82b6da8c0c68062e59c11e",
-      "WorkbenchWindow.Fields.cs": "536ec10086041f518c755af067fed4aa2a4890ad0106b78d87fa347a0a205b7d",
+      "WorkbenchWindow.Fields.cs": "bd596eb257ddc83daa14fe6c3b79931f93514087680842579addeb7036697fa4",
       "WorkbenchWindow.Styles.xaml": "0535ef1748fda1b6db09ec564406b30b90a6b6e3a8c96b75896aa04d9fed3c3c",
       "WorkbenchWindow.xaml": "fb06cdae040aa1d2210d31019e786835903a417b807fafdc02c5d4c408e1a7ab",
       "WorkbenchWindow.xaml.cs": "1a2e4ea89cad61a3eae68f0e4799f2b503b90974f14c1983ac287018599df39e",
       "assets/README.md": "d610019ca4ecac5fb938d1b59d9f8b78d63a4a778d82b6da8c0c68062e59c11e",
       "docs/ASSETS.md": "9dcadab98c3b2ee8dcd9ca5f1d374c57e25520ad917a0b0f994519ae17ad53e9",
-      "docs/BUILD.md": "2f4e93187fc0d759c8eae8728f756a7f87592f25ee99284eb2fc39b2bb2b230a",
+      "docs/BUILD.md": "2470064192b438baf7c0ef127b548b7a35ad9acd2219ca473a2b26c89625aff6",
       "docs/CHARACTER-PROFILE-MIGRATION.md": "5ed4c6caf12b9b76d013608bf26e29786b23c03503c3651aa57da686a9fc99b2",
       "docs/CHARACTER-PROFILE.md": "f11b5c1745a4b152c0dab6563dca7d9e4b5d902692cef3503a077b65ccd7a14a",
-      "docs/PUBLIC-FILES.txt": "bba07239dfac5fc50397f598173cc9562f72ff57c08fa1cd8576270dc8e2e44c",
+      "docs/PUBLIC-FILES.txt": "d295d57cc719857165bb819a66648e7b63c989a3a49142e7c9e3d053fdcfabbd",
       "examples/character-profile.neutral.json": "9cfb0ee327ed071dd481bdda6b26fc4154c778a64f448a83eae8832c2c298ba6",
       "global.json": "d11e5ab12ec1bdc460669fd406da4cdf4528687a4caa7149f01ccac44aba8708",
       "scripts/verify-character-profile.ps1": "6179b2a31f7c66403896e8505f772818a23884a4d8bfb46729f0384340c48d2b",
@@ -3278,13 +3284,94 @@
       "tests/PlanarInertiaTests/PlanarInertiaTests.csproj": "ba33fd0e7ace959ef7a91f583018f0819124dbc070e8b034059c40980b2bc2da",
       "tests/PlanarInertiaTests/Program.cs": "e3ea118a88e24b98d80cfe948d2bac90452e7a8d7d31f5ea9500f8797d07347b",
       "tests/PlanarInertiaTests/ReflectionCases.cs": "d9428cc30189fabebb8b38ae1daa2d2a44c464b33cad5e59c1266bbc3a28844e",
+      "tests/PoundDurationIntegration/PoundDurationIntegration.csproj": "48c309ccbe04b74678ee6b947dab22745f265bfbadfb00aec61fe30e931971fd",
+      "tests/PoundDurationIntegration/Program.cs": "18a2588f254813ea9ed1f766bfbe8da14f43e31d8f0a8ff7d0f23e724caf9756",
       "tests/SourceOnlyFallbackTests/ProfileAdmissionCases.cs": "38d7c9500356a6d86de07c2623a673ceee6c181dabc4baab8f6c417889fabd4d",
       "tests/SourceOnlyFallbackTests/Program.cs": "c9f7d9de5f55175797dcc36e458b1db16ae98064bcb19587ae6874712d0a7b16",
       "tests/SourceOnlyFallbackTests/SourceOnlyFallbackTests.csproj": "2b27330a836dee2a26d5238e9d99c3de82bccdc6ddaa78ff2196696788c8cdc4",
       "tests/SourceOnlyIsolationTests/Program.cs": "6ad283f03aeefeac47988c775ba1f88b078d752716095aa1fad97577f2f51c3e",
       "tests/SourceOnlyIsolationTests/SourceOnlyIsolationTests.csproj": "5328a5fb14924c63b21c1617a007ac535dbf139e5d0e15976b021ad15d786dce",
+      "tests/VisualAdmissionIntegration/Program.cs": "49140bee0372857b4584cc2db5bc8fa4d4bba9af1872358a8cf44155ced5f49b",
+      "tests/VisualAdmissionIntegration/RejectionAtomicity.cs": "8341387f9b7f86fb4adbe8561eeb2cc3c005849849efac88a809a0bb6bf06c5f",
+      "tests/VisualAdmissionIntegration/VisualAdmission.cs": "9816b56cd3ac6c17b5e734e7d3f29f9120e87d98e1a96ef1d1da3c6626918950",
+      "tests/VisualAdmissionIntegration/VisualAdmissionIntegration.csproj": "172cddf5056853104295eac0b2058229ded8d9766694b7bcc3e5d89d4273a84f",
       "tools/SourceOnlyVerifier/Program.cs": "d91f635c7d3125c83f9fbe6f33e05a33d8dbebd0ea073d12a37531a0745c7c73",
       "tools/SourceOnlyVerifier/SourceOnlyVerifier.csproj": "c7da74be1eb8035cdcb2ab8ba1c81731b01d50787f5abfaf9240a5d45dc12ae1"
     }
+  },
+  "incrementalSync": {
+    "version": "1.1.0",
+    "date": "2026-10-29",
+    "sourceCommit": "5d97bab68ec3ff82c24866971802565e7bb73c86",
+    "sourceBaseCommit": "b809f0670a9eb0d90ee48ed77160a6c2274385b5",
+    "publicBaseCommit": "229da975d125f98f5ac9b63efbc3e4f38740782f",
+    "method": "Three-way source merge; preserve existing public adaptations; no private history imported.",
+    "sourceSha256Policy": "Original files[].sourceSha256 and sourceCommit remain historical export provenance. Current imported source bytes are recorded below; publicSnapshot.sha256 hashes public files.",
+    "files": [
+      {
+        "publicPath": "Animation/ClickDefinitions.cs",
+        "sourcePath": "Animation/ClickDefinitions.cs",
+        "sourceSha256": "608dd0f767bb10415bd2c2865818126ac4185f486f8fe2583680c6b51431c5a2"
+      },
+      {
+        "publicPath": "MainWindow.Pmv2Visual.cs",
+        "sourcePath": "MainWindow.Pmv2Visual.cs",
+        "sourceSha256": "edcc3375ab4265e6eabe4866e3f750429c5deb55817a2f81c8c985838e2e21a5"
+      },
+      {
+        "publicPath": "WorkbenchWindow.Fields.cs",
+        "sourcePath": "WorkbenchWindow.Fields.cs",
+        "sourceSha256": "bd596eb257ddc83daa14fe6c3b79931f93514087680842579addeb7036697fa4"
+      },
+      {
+        "publicPath": "NecoArcDesktopPet.csproj",
+        "sourcePath": "NecoArcDesktopPet.csproj",
+        "sourceSha256": "5617b61b74e5dcaf719f272e1eeb98c751e17f45d8c32652b834bf7e54b517b7"
+      },
+      {
+        "publicPath": "tests/PoundDurationIntegration/Program.cs",
+        "sourcePath": "tests/PoundDurationIntegration/Program.cs",
+        "sourceSha256": "387023d868af19674721038dd37ed07d3d193c368549983b79814524070c5c4c"
+      },
+      {
+        "publicPath": "tests/PoundDurationIntegration/PoundDurationIntegration.csproj",
+        "sourcePath": "tests/PoundDurationIntegration/PoundDurationIntegration.csproj",
+        "sourceSha256": "42d7b9b33a0d24166618b7f8cd4dee8ed01e4e1fcbd4bc7031fd4aa84bc134b6"
+      },
+      {
+        "publicPath": "tests/VisualAdmissionIntegration/VisualAdmission.cs",
+        "sourcePath": "tests/ProductionCrossScreenIntegration/VisualAdmission.cs",
+        "sourceSha256": "b3a8fc56b0c2d814203a003cf7d6b77483872f7b9d81d119ea7a45c42a801ae2"
+      },
+      {
+        "publicPath": "tests/VisualAdmissionIntegration/RejectionAtomicity.cs",
+        "sourcePath": "tests/ProductionCrossScreenIntegration/RejectionAtomicity.cs",
+        "sourceSha256": "d7d434b98b5fe7b79a4608b9a00507152109f10a683f53b789bdefa70d8c1647"
+      }
+    ],
+    "changedPublicFiles": [
+      "Animation/ClickDefinitions.cs",
+      "CHANGELOG.md",
+      "MainWindow.Pmv2Visual.cs",
+      "NecoArcDesktopPet.csproj",
+      "README.md",
+      "WorkbenchWindow.Fields.cs",
+      "docs/BUILD.md",
+      "docs/EXPORT-MANIFEST.json",
+      "docs/PUBLIC-FILES.txt",
+      "tests/PoundDurationIntegration/PoundDurationIntegration.csproj",
+      "tests/PoundDurationIntegration/Program.cs",
+      "tests/VisualAdmissionIntegration/Program.cs",
+      "tests/VisualAdmissionIntegration/RejectionAtomicity.cs",
+      "tests/VisualAdmissionIntegration/VisualAdmission.cs",
+      "tests/VisualAdmissionIntegration/VisualAdmissionIntegration.csproj"
+    ],
+    "excluded": [
+      "private media and material collections",
+      "asset-bearing assemblies",
+      "installers and portable archives",
+      "private settings and build products"
+    ],
+    "validationScope": "Existing source-only default verification, targeted cursor-only test, optional visual test compilation and Git file/hash checks; no private full regression or real-asset acceptance."
   }
 }

@@ -43,13 +43,16 @@ public partial class MainWindow
     private sealed record PilotVisualSnapshot(double SurfaceWidth,double SurfaceHeight,double ImageWidth,double ImageHeight,
         double Left,double Top,double WindowWidth,double WindowHeight,ImageSource? Source,Transform Transform,Point Origin,
         Point Anchor,Rect Visible,Size BaseSize,BitmapSource? Arranged,string? Path,double SizeHeight,uint Dpi,Rect Union,bool Calibrated,
-        PilotHeldFrame? Held,string? PlaybackPath,long PlaybackGeneration,int FrameIndex);
+        PilotHeldFrame? Held,string? PlaybackPath,long PlaybackGeneration,int FrameIndex,
+        bool Deferred,bool Resume,bool PresentationHeld,bool Playing,PhysicalRect? RetainedViewport);
     private PilotVisualSnapshot PilotVisualCapture()=>new(PetSurface.Width,PetSurface.Height,PetImage.Width,PetImage.Height,
         Canvas.GetLeft(PetImage),Canvas.GetTop(PetImage),Width,Height,PetImage.Source,PetImage.RenderTransform.Clone(),
         PetImage.RenderTransformOrigin,_pilotVisualAnchorLocal,_pilotVisualVisibleBounds,_pilotVisualBaseSize,_pilotVisualArrangedFrame,
         _pilotVisualSizePath,_pilotVisualSizeHeight,_pilotVisualSizeDpi,_pilotVisualSizeUnion,_pilotVisualCalibrated,
-        _pilotVisualHeldIdentity,_gifPlayer?.ResourcePath,_gifPlayer?.PlaybackGeneration??0,_gifPlayer?.PilotFrameIndex??0);
-    private void PilotVisualRestore(PilotVisualSnapshot s)
+        _pilotVisualHeldIdentity,_gifPlayer?.ResourcePath,_gifPlayer?.PlaybackGeneration??0,_gifPlayer?.PilotFrameIndex??0,
+        _pilotVisualPresentationDeferred,_pilotVisualResume,_gifPlayer?.PilotPresentationHeld??false,_gifPlayer?.PilotFrameTimerEnabled??false,
+        _pilotVisualRetainedViewport);
+    private void PilotVisualRestore(PilotVisualSnapshot s,bool presentation=false)
     {
         PetSurface.Width=s.SurfaceWidth;PetSurface.Height=s.SurfaceHeight;
         PetImage.Width=s.ImageWidth;PetImage.Height=s.ImageHeight;PetImage.Source=s.Source;
@@ -58,6 +61,15 @@ public partial class MainWindow
         _pilotVisualAnchorLocal=s.Anchor;_pilotVisualVisibleBounds=s.Visible;_pilotVisualBaseSize=s.BaseSize;_pilotVisualArrangedFrame=s.Arranged;
         _pilotVisualSizePath=s.Path;_pilotVisualSizeHeight=s.SizeHeight;_pilotVisualSizeDpi=s.Dpi;
         _pilotVisualSizeUnion=s.Union;_pilotVisualCalibrated=s.Calibrated;
+        if(presentation&&_gifPlayer!=null) {
+            // Only the unchanged playback owner may use this restoration. Do not
+            // switch clips, rewind completion callbacks, or resurrect an action.
+            _pilotVisualHeldIdentity=s.Held;_pilotVisualHeldFrame=s.Held?.Frame;
+            _pilotVisualPresentationDeferred=s.Deferred;_pilotVisualResume=s.Resume;
+            _pilotVisualRetainedViewport=s.RetainedViewport;
+            _gifPlayer.PilotPresentationHeld=s.PresentationHeld;
+            if(s.Playing)_gifPlayer.Resume();else _gifPlayer.Pause();
+        }
         using(PilotLayoutScope()){Width=s.WindowWidth;Height=s.WindowHeight;UpdateLayout();}
     }
     private BitmapSource? _pilotVisualArrangedFrame;
@@ -193,6 +205,9 @@ public partial class MainWindow
         if(!_pilotReady||_gifPlayer==null||_pilotClosing||_pilotStopped)return;
         _pilotVisualDirty=true;
         Abort(ref _pilotVisualPending);_pilotVisualWait?.Stop();_pilotVisualWait=null;var revision=++_pilotVisualRevision;
+        // Capture retains the admitted box, so retain its matching bitmap too.
+        // The helper leaves an existing held frame under its original owner.
+        PilotVisualDeferPresentation();
         if(PilotVisualGrabActive) {
             _pilotVisualRetainedViewport=null;
             // The existing physical grab and 4D fraction retain their admitted size.
@@ -214,9 +229,12 @@ public partial class MainWindow
             }
             // Selected throw uses this very transaction, without a second switch.
         }
+        // A selected throw may just have cleared a held frame above. Recheck
+        // deferral now that it can admit its own clip; otherwise this is idempotent.
         PilotVisualDeferPresentation();
         var generation=_pilotGeneration;var gesture=_pilotGesture;var source=_pilotSource;var token=_pilotSourceToken;var hwnd=PilotHwnd;
         var playback=_gifPlayer.PlaybackGeneration;var path=_gifPlayer.ResourcePath;var began=Stopwatch.GetTimestamp();var attempts=0;
+        var rejectionRetries=0;var finished=false;
         if(_pilotAttachmentTarget!=null&&!_pilotAttachmentPosePending&&
             path==(_pilotAttachmentPoseSide==AttachmentSide.Top?PilotStandPath:PilotSidePath))
         {
@@ -227,7 +245,7 @@ public partial class MainWindow
             path!=(_pilotAttachmentPoseSide==AttachmentSide.Top?PilotStandPath:PilotSidePath);
         var rocketReturning=_pilotRocketAttachment!=null&&_pilotRocketReturnGuard!=null;
         if(attachedOverlay)_pilotAttachmentOverlayVisualRevision=revision;
-        bool Own()=>revision==_pilotVisualRevision&&generation==_pilotGeneration&&gesture==_pilotGesture&&
+        bool Own()=>!finished&&revision==_pilotVisualRevision&&generation==_pilotGeneration&&gesture==_pilotGesture&&
             ReferenceEquals(source,_pilotSource)&&token==_pilotSourceToken&&hwnd==PilotHwnd&&PilotClickLive&&
             _gifPlayer.PlaybackGeneration==playback&&_gifPlayer.ResourcePath==path;
         void Run()
@@ -265,6 +283,11 @@ public partial class MainWindow
             // throw owner. Keep the actual previous size-path across Arrange so
             // a rejected successor never returns throw dimensions as Idle.
             var previousSizePath=_pilotVisualSizePath;
+            var snapshot=PilotVisualCapture();
+            var rollbackReady=!_crossScreen||CrossCheckpoint().Ready;
+            var placementBefore=_crossPlacementId;var requestedBefore=_crossRequestedId;
+            var acceptedBefore=_crossAcceptedId;var acceptedOwnerBefore=_crossAcceptedOwner;
+            var expectedBefore=_crossExpected;var originBefore=_crossOrigin;
             PilotVisualArrange();
             var w=Math.Round(PetSurface.Width*scale.X);var h=Math.Round(PetSurface.Height*scale.Y);
             // This is viewport bookkeeping, not a return continuation: a higher
@@ -342,7 +365,10 @@ public partial class MainWindow
                 PilotRestCancel("visual footprint refused",false);
                 PilotRandomCancel("visual footprint refused",false);
                 PilotMotionCancel("visual footprint refused");PilotClickEndAction("visual footprint refused",false);
-                _gifPlayer.TrySwitchTo(_effectiveBaseIdlePath!);_gifPlayer.Resume();
+                if(!_gifPlayer.TrySwitchTo(_effectiveBaseIdlePath!)){
+                    PilotStop("Visual footprint: refused corridor and idle fallback unavailable.");return;
+                }
+                _gifPlayer.Resume();
                 _pilotLog?.Write("visual-footprint-refused",new{path,old,wanted,reason="no covered resize corridor; idle fallback; safety unchanged"},"REFUSED");return;
             }
             if(Math.Abs(target.Width-w)>1e-6||Math.Abs(target.Height-h)>1e-6)
@@ -360,6 +386,9 @@ public partial class MainWindow
             if(rocketReturning&&_pilotRocketReturnGuard?.Invoke()!=true){PilotRocketCancel("attached return changed before placement");return;}
             if(!PilotPlace(target,"visual footprint"))
             {
+                // Native hooks may synchronously cancel this owner or queue a
+                // successor. An old transaction must never restore over it.
+                if(!Own())return;
                 if(rocketReturning){PilotRocketCancel("attached return existing writer refused pose");return;}
                 if(attaching){
                     if(attachedOverlay){
@@ -372,7 +401,53 @@ public partial class MainWindow
                         _pilotVisualReturn=PilotVisualAttachmentIdleReturn(old,previousSizePath);
                         _gifPlayer.TrySwitchTo(_effectiveBaseIdlePath!);_gifPlayer.Resume();
                     }
+                    return;
                 }
+                void Refuse(string why) {
+                    finished=true;
+                    _pilotLog?.Write("visual-footprint-rollback-refused",new{revision,generation,gesture,path,old,target,reason=why},"FAIL-CLOSED");
+                    PilotStop("Visual footprint: placement refused; "+why);
+                }
+                // Require exact unchanged native/trusted geometry, not merely the
+                // writer's 2px admission tolerance. A real overwrite is not ours
+                // to roll back. Check the entire placement lineage before touching IDs.
+                if(!rollbackReady||!snapshot.Calibrated||snapshot.Source==null||snapshot.Arranged==null||
+                    snapshot.PlaybackPath!=path||snapshot.PlaybackGeneration!=playback||
+                    snapshot.FrameIndex!=_gifPlayer.PilotFrameIndex||_pilotRect!=old||
+                    !PilotNative.GetWindowRect(hwnd,out var refused)||refused.Physical!=old||
+                    !PilotMapping(out var refusedScale)||refusedScale!=scale||!PilotFresh||
+                    _pilotPlacementDepth!=0||_pilotHookDepth!=0||_crossLayoutDepth!=0||
+                    _crossScreen&&(_crossRecovery?.Active==true||_crossInFlightId!=null||
+                        _crossAcceptedId!=acceptedBefore||_crossAcceptedOwner!=acceptedOwnerBefore||_crossExpected!=expectedBefore||
+                        !(_crossPlacementId==placementBefore&&_crossRequestedId==requestedBefore||
+                          _crossPlacementId==placementBefore+1&&_crossRequestedId==_crossPlacementId))) {
+                    Refuse("old presentation/native/placement lineage cannot be proven unchanged");return;
+                }
+                var withdraw=_crossScreen&&_crossPlacementId==placementBefore+1;
+                var withdrawn=withdraw?_crossRequestedId:null;
+                var rejectedPlacement=_crossPlacementId;
+                if(_crossScreen) {
+                    // Withdraw just this rejected request, never manufacture an
+                    // acceptance or change AcceptedId. No successor/in-flight exists.
+                    if(withdraw)_crossRequestedId=null;
+                    _crossOrigin=originBefore;
+                }
+                PilotVisualRestore(snapshot,true);
+                if(!Own())return; // UpdateLayout may synchronously transfer ownership.
+                if(!PilotNative.GetWindowRect(hwnd,out refused)||refused.Physical!=old||
+                    !PilotMapping(out refusedScale)||refusedScale!=scale||_pilotRect!=old||
+                    _crossScreen&&(!CrossCheckpoint().Ready||_crossPlacementId!=rejectedPlacement||
+                        _crossAcceptedId!=acceptedBefore||_crossAcceptedOwner!=acceptedOwnerBefore||
+                        _crossExpected!=expectedBefore||_crossRequestedId!=(withdraw?null:requestedBefore)||_crossInFlightId!=null)) {
+                    Refuse("restored presentation failed independent checkpoint");return;
+                }
+                _pilotLog?.Write("visual-footprint-rollback",new{revision,generation,gesture,path,old,
+                    withdrawnPlacementId=withdrawn,acceptedPlacementId=_crossAcceptedId,
+                    retry=rejectionRetries,sourcePath=snapshot.Path,scale},"RESTORED; NOT ACCEPTED");
+                if(rejectionRetries++>=1){Refuse("one retry exhausted after trusted rollback");return;}
+                // Same closure and revision: a successor invalidates this callback
+                // and cannot renew its one-retry budget through recursive Queue().
+                _pilotVisualPending=Dispatcher.BeginInvoke(DispatcherPriority.Loaded,new Action(Run));
                 return;
             }
             if(!Own())return;
@@ -405,6 +480,7 @@ public partial class MainWindow
             _pilotLog?.Write("visual-footprint",new{revision,generation,gesture,path,sourceUnion=_gifPlayer.PilotVisibleUnion,
                 old,target,anchorLocal=_pilotVisualAnchorLocal,grounded,scale,repairs=post.Physical==target?0:1},"CONTROLLED WPF/OS GEOMETRY; USER PIXELS PENDING");
             if(_pilotVisualResume){_pilotVisualResume=false;_gifPlayer.Resume();}
+            finished=true;
             completed?.Invoke();
         }
         _pilotVisualPending=Dispatcher.BeginInvoke(DispatcherPriority.Loaded,new Action(Run));

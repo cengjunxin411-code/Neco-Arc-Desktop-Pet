@@ -25,6 +25,7 @@ App.xaml.cs
 AssemblyInfo.cs
 AttachmentContactProfile.cs
 AttachmentGeometry.cs
+CHANGELOG.md
 CONTRIBUTING.md
 CharacterProfiles/CharacterProfile.cs
 CharacterProfiles/CharacterProfileFile.cs
@@ -187,10 +188,16 @@ tests/PhysicsModelTests/TailCases.cs
 tests/PlanarInertiaTests/PlanarInertiaTests.csproj
 tests/PlanarInertiaTests/Program.cs
 tests/PlanarInertiaTests/ReflectionCases.cs
+tests/PoundDurationIntegration/PoundDurationIntegration.csproj
+tests/PoundDurationIntegration/Program.cs
 tests/SourceOnlyFallbackTests/ProfileAdmissionCases.cs
 tests/SourceOnlyFallbackTests/Program.cs
 tests/SourceOnlyFallbackTests/SourceOnlyFallbackTests.csproj
 tests/SourceOnlyIsolationTests/Program.cs
 tests/SourceOnlyIsolationTests/SourceOnlyIsolationTests.csproj
+tests/VisualAdmissionIntegration/Program.cs
+tests/VisualAdmissionIntegration/RejectionAtomicity.cs
+tests/VisualAdmissionIntegration/VisualAdmission.cs
+tests/VisualAdmissionIntegration/VisualAdmissionIntegration.csproj
 tools/SourceOnlyVerifier/Program.cs
 tools/SourceOnlyVerifier/SourceOnlyVerifier.csproj

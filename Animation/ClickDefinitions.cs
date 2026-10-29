@@ -9,7 +9,7 @@ internal static class ClickDefinitions
     public static ClickActionDefinition[] SingleActions { get; } =
     {
         new("NecoPetMaterials/click/flick.gif", 1),
-        new("NecoPetMaterials/click/pound.gif", 7),
+        new("NecoPetMaterials/click/pound.gif", 13),
         new("NecoPetMaterials/click/quick_punch.gif", 15)
     };
     public static ClickActionDefinition[] RocketActions { get; } =

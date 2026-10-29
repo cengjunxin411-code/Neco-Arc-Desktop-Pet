@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Animation/ClickDefinitions.cs" Link="ClickDefinitions.cs" />
+    <Compile Include="../../Animation/GifFramePlayer.cs" Link="GifFramePlayer.cs" />
+    <Compile Include="../../Animation/GifPlaybackCursor.cs" Link="GifPlaybackCursor.cs" />
+    <Compile Include="../../Animation/GifPlaybackCompletedEventArgs.cs" Link="GifPlaybackCompletedEventArgs.cs" />
+    <Resource Include="../../NecoPetMaterials/click/pound.gif" Link="NecoPetMaterials/click/pound.gif" Condition="Exists('../../NecoPetMaterials/click/pound.gif')" />
+    <Resource Include="../../NecoPetMaterials/click/flick.gif" Link="NecoPetMaterials/click/flick.gif" Condition="Exists('../../NecoPetMaterials/click/flick.gif')" />
+    <Resource Include="../../NecoPetMaterials/click/quick_punch.gif" Link="NecoPetMaterials/click/quick_punch.gif" Condition="Exists('../../NecoPetMaterials/click/quick_punch.gif')" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../../CharacterProfiles/*.cs" Link="Profiles/%(Filename)%(Extension)" />
+    <Compile Include="../../Animation/AnimationVisualProfile.cs" Link="AnimationVisualProfile.cs" />
+    <Compile Include="../../AttachmentGeometry.cs" Link="AttachmentGeometry.cs" />
+    <Compile Include="../../AttachmentContactProfile.cs" Link="AttachmentContactProfile.cs" />
+    <Compile Include="../../SideAttachmentDetectionProfile.cs" Link="SideAttachmentDetectionProfile.cs" />
+  </ItemGroup>
+</Project>
